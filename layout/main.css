@@ -7,6 +7,7 @@
   .p-top-img h1 {
     color: white;
     padding-top: 170px;
+    margin-left: 25px;
   }
 
   .p-imgs {
@@ -20,6 +21,25 @@
     height: 650px;
     margin-top: 50px;
     position: relative;
+  }
+  .each-img-left h2,
+.each-img-right h2 {
+    color: #fff;
+    font-size: 44px;
+    margin: 20px;
+    padding-top: 20px;
+  }
+  .each-img-left h2:after,
+.each-img-right h2:after {
+    position: absolute;
+    display: inline-block;
+    top: 100px;
+    left: 30px;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
   }
 
   .container {
@@ -47,7 +67,7 @@
     width: 100%;
   }
   .p-map .full-mask {
-    height: 700px;
+    height: 100%;
     width: 100%;
     background-color: #707070;
     opacity: 0.7;
@@ -78,7 +98,7 @@
     font-size: 14px;
     line-height: 40px;
     color: #fff;
-    padding: 0 30px;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 751px) and (max-width: 1200px) {
@@ -90,6 +110,7 @@
   .p-top-img h1 {
     color: white;
     padding-top: 170px;
+    margin-left: 85px;
   }
 
   .p-imgs {
@@ -113,6 +134,25 @@
     position: relative;
     width: 100%;
   }
+  .each-img-left h2,
+.each-img-right h2 {
+    color: #fff;
+    font-size: 44px;
+    margin: 20px;
+    padding-top: 20px;
+  }
+  .each-img-left h2:after,
+.each-img-right h2:after {
+    position: absolute;
+    display: inline-block;
+    top: 120px;
+    left: 30px;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
 
   .container {
     position: absolute;
@@ -135,14 +175,14 @@
   .p-map .map {
     background: url("../image/map.png") no-repeat center center;
     background-size: cover;
-    height: 700px;
+    height: 415px;
     width: 100%;
   }
   .p-map .full-mask {
-    height: 700px;
+    height: 100%;
     width: 100%;
     background-color: #707070;
-    opacity: 0.8;
+    opacity: 0.7;
     position: absolute;
     z-index: 100;
   }
@@ -162,7 +202,7 @@
     font-size: 14px;
     line-height: 40px;
     color: #fff;
-    padding: 0 30px;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -174,6 +214,7 @@
   .p-top-img h1 {
     color: white;
     padding-top: 170px;
+    margin-left: 85px;
   }
 
   .p-imgs {
@@ -192,10 +233,29 @@
   }
 
   .each-img-left,
-  .each-img-right {
+.each-img-right {
     height: 650px;
     position: relative;
     width: 100%;
+  }
+  .each-img-left h2,
+.each-img-right h2 {
+    color: #fff;
+    font-size: 44px;
+    margin: 20px;
+    padding-top: 20px;
+  }
+  .each-img-left h2:after,
+.each-img-right h2:after {
+    position: absolute;
+    display: inline-block;
+    top: 120px;
+    left: 30px;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
   }
 
   .container {
@@ -206,7 +266,7 @@
     padding-left: 10px;
   }
   .container .item-1,
-  .container .item-2 {
+.container .item-2 {
     height: auto;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px 10px;
@@ -219,14 +279,22 @@
   .p-map .map {
     background: url("../image/map.png") no-repeat center center;
     background-size: cover;
-    height: 700px;
+    height: 650px;
     width: 100%;
   }
   .p-map .full-mask {
-    height: 700px;
+    height: 100%;
     width: 100%;
     background-color: #707070;
-    opacity: 0.8;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 100;
+  }
+  .p-map .half-mask {
+    height: 100%;
+    width: 67%;
+    background-color: #707070;
+    opacity: 0.5;
     position: absolute;
     z-index: 100;
   }
@@ -246,7 +314,8 @@
     font-size: 14px;
     line-height: 40px;
     color: #fff;
-    padding: 0 30px;
+    width: 63%;
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -10,11 +10,12 @@
       color:#fff;
       font-size: 44px;
       margin:20px;
+      padding-top: 20px;
 
       &:after{
         position: absolute;
         display: inline-block;
-        top:80px;
+        top:100px;
         left:30px;
         content: "";
         width: 50px;
