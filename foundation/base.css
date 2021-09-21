@@ -1,0 +1,17 @@
+.l-main-area {
+  width: 100%;
+}
+@media (min-width: 1201px) {
+  .l-main-area {
+    width: 80%;
+  }
+}
+
+main {
+  background-color: #fff;
+}
+
+.l-wrapper {
+  position: relative;
+}
+/*# sourceMappingURL=base.css.map */

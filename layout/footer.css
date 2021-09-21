@@ -1,0 +1,17 @@
+.l-footer {
+  color: #fff;
+  background-color: #967f6a;
+  text-align: center;
+  height: 100px;
+}
+.l-footer h4 {
+  padding-top: 20px;
+  color: #fff;
+}
+.l-footer p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+/*# sourceMappingURL=footer.css.map */

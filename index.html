@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/component.css">
-  <link rel="stylesheet" href="css/project.css">
-  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="foundation/base.css">
+  <link rel="stylesheet" href="layout/header.css">
+  <link rel="stylesheet" href="layout/main.css">
+  <link rel="stylesheet" href="layout/sidebar.css">
+  <link rel="stylesheet" href="layout/footer.css">
+  <link rel="stylesheet" href="object/component.css">
+  <link rel="stylesheet" href="object/project.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>ハンバーガーメニューを作る</title>
@@ -22,11 +23,13 @@
 
       
       <header class="l-header">
-        <img src="./image/pc_logo@2x.png">
+        <div class="openbtn"><span>MENU</span><span></span></div>
+        <div class="header-logo">
+          <img src="./image/pc_logo@2x.png">
+        </div>
         <div id="search-wrap">
-          <form role="search" method="get" action"">
-            <!-- <i class="fas fa-search"></i> -->
-            <input type="text" value="" name="" id="search-text" class="use_icon">
+          <form role="search" method="get" action="">
+            <input type="text" value="     " name="" id="search-text" class="use_icon">
             <button class="c-btn">検索</button>
           </form>
         </div>
@@ -37,55 +40,91 @@
         
         
         <div class="p-top-img">
-          <img>
           <h1>ダミーサイト</h1>
         </div>
         
         <div class="p-imgs">
-          <div class="each-img">
-            <img>
+          <div class="each-img-left">
             <h2>Take Out</h2>
             <div class="container">
-              <h3>Take Out</h3>
-              <p>当店のテイクアウトで利用できる商品を掲載しています</p>
-              <h3>Take Out</h3>
-              <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+              <div class="item-1">
+                <h3>Take Out</h3>
+                <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+              </div>
+              <div class="item-2">
+                <h3>Take Out</h3>
+                <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+              </div>
             </div>
           </div>
-          <div class="each-img">
-            <img>
+          <div class="each-img-right">
             <h2>Eat In</h2>
             <div class="container">
-              <h3>Eat In</h3>
-              <p>当店のイートインで利用できる商品を掲載しています</p>
-              <h3>Eat In</h3>
-              <p>当店のイートインで利用できる商品を掲載しています</p>
+              <div class="item-1">
+                <h3>Eat In</h3>
+                <p>当店のイートインで利用できる商品を掲載しています</p>
+              </div>
+              <div class="item-2">
+                <h3>Eat In</h3>
+                <p>当店のイートインで利用できる商品を掲載しています</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="map">
-          <img>
-          <div class="p-modal">
-            <h2>見出しが入ります</h2>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <div class="p-map">
+          
+          <div class="map">
+            
+            <div class="p-modal">
+              <h2>見出しが入ります</h2>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </div>
+            <div class="full-mask"></div>
+            <div class="half-mask"></div>
           </div>
         </div>
-          
       </main>
-
     </div>
 
     <div class="l-sidebar">
-
+      <h3>バーガー</h3>
+      <ul>
+        <li>ハンバーガー</li>
+        <li>チーズバーガー</li>
+        <li>テリヤキバーガー</li>
+        <li>アボガドバーガー</li>
+        <li>フィッシュバーガー</li>
+        <li>ベーコンバーガー</li>
+        <li>チキンバーガー</li>
+      </ul>
+      <h3>サイド</h3>
+      <ul>
+        <li>ポテト</li>
+        <li>サラダ</li>
+        <li>ナゲット</li>
+        <li>コーン</li>
+      </ul>
+      <h3>ドリンク</h3>
+      <ul>
+        <li>コーラ</li>
+        <li>ファンタ</li>
+        <li>オレンジ</li>
+        <li>アップル</li>
+        <li>紅茶 (Ice/Hot)</li>
+        <li>コーヒー (Ice/Hot)</li>
+      </ul>
+      
     </div>
+    <span class="l-sidebar-mask"></span>
 
-  </div>
     
-    <div class="l-footer">
-      <h3>ショップ情報 | ヒストリー</h3>
-      <p>Copyright: RaiseTech</p>
-    </div>
+  </div>
+  
+  <div class="l-footer">
+    <h4>ショップ情報 ｜ ヒストリー</h4>
+    <p>Copyright: RaiseTech</p>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
