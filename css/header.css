@@ -1,0 +1,97 @@
+.l-header {
+  background-color: #fff7ef;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .header-logo {
+    margin: 0 auto;
+    padding: 35px 0;
+    text-align: center;
+  }
+
+  #search-wrap {
+    text-align: center;
+  }
+  #search-wrap .use_icon {
+    border: 1px solid black;
+    display: inline-block;
+    background: #fff url("../image/_i_icon_10823_icon_108231_256.png") no-repeat left center;
+    background-size: 20px 20px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+  }
+  #search-wrap .c-btn {
+    padding: 5px 50px;
+    display: inline-block;
+    background-color: #E7E2DD;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+  .header-logo {
+    margin: 0 auto;
+    padding: 35px 0;
+    text-align: center;
+  }
+
+  #search-wrap {
+    text-align: center;
+  }
+  #search-wrap .use_icon {
+    border: 1px solid black;
+    display: inline-block;
+    background: #fff url("../image/_i_icon_10823_icon_108231_256.png") no-repeat left center;
+    background-size: 20px 20px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+  }
+  #search-wrap .c-btn {
+    padding: 5px 50px;
+    display: inline-block;
+    background-color: #E7E2DD;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .l-header {
+    background-color: #fff7ef;
+    padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .header-logo {
+    padding: 35px 0;
+    margin-left: 20px;
+  }
+
+  #search-wrap {
+    margin: 75px 20px;
+  }
+  #search-wrap .use_icon {
+    border: 1px solid black;
+    display: inline-block;
+    background: #fff url("../image/_i_icon_10823_icon_108231_256.png") no-repeat left center;
+    background-size: 20px 20px;
+    height: 36px;
+    width: 300px;
+    border-radius: 5px;
+  }
+  #search-wrap .c-btn {
+    padding: 5px 50px;
+    display: inline-block;
+    background-color: #E7E2DD;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+}
+/*# sourceMappingURL=header.css.map */

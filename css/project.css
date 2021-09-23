@@ -1,0 +1,177 @@
+.each-img-left {
+  background: url("../image/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108@2x.png") no-repeat center center;
+}
+
+.each-img-right {
+  background: url("../image/473d814b175bd517b56eb309f2958725@2x.png") no-repeat center center;
+}
+
+.archive-main {
+  position: relative;
+}
+@media (min-width: 751px) {
+  .archive-main {
+    width: 100%;
+  }
+}
+
+.p-archive-img {
+  height: 280px;
+  width: auto;
+  background: url("../image/p-archive-img@2x.jpg") no-repeat left center;
+  position: relative;
+  background-size: cover;
+}
+
+.archive-img-mask {
+  content: "";
+  height: 280px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.archive-section-text {
+  width: 100%;
+}
+@media (min-width: 751px) {
+  .archive-section-text {
+    width: 750px;
+  }
+}
+
+.p-archive-item-1,
+.p-archive-item-2,
+.p-archive-item-3,
+.p-archive-item-4,
+.p-archive-item-5 {
+  height: 585px;
+  width: 100%;
+}
+@media (min-width: 751px) {
+  .p-archive-item-1,
+.p-archive-item-2,
+.p-archive-item-3,
+.p-archive-item-4,
+.p-archive-item-5 {
+    height: 350px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.img-item-1,
+.img-item-2,
+.img-item-3,
+.img-item-4,
+.img-item-5 {
+  vertical-align: bottom;
+  width: 100%;
+  height: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 751px) {
+  .img-item-1,
+.img-item-2,
+.img-item-3,
+.img-item-4,
+.img-item-5 {
+    -o-object-position: 0 50%;
+       object-position: 0 50%;
+    height: 100%;
+    width: 50%;
+  }
+}
+
+.archive-container {
+  background-color: #3C2B1C;
+  color: #fff;
+  height: 60%;
+  width: 100%;
+  padding-bottom: 60px;
+  position: relative;
+}
+@media (min-width: 751px) {
+  .archive-container {
+    height: 100%;
+    width: 50%;
+  }
+}
+.archive-container h3 {
+  color: #fff;
+}
+.archive-container p {
+  color: #fff;
+}
+.archive-container button {
+  display: inline-block;
+  background-color: #fff;
+  color: #707070;
+  border-radius: 20px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  bottom: 30px;
+}
+
+.archive-pagination-pc {
+  width: 335px;
+}
+.archive-pagination-pc ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.archive-pagination-pc li {
+  list-style: none;
+}
+
+.archive-pagination {
+  display: none;
+}
+
+@media (min-width: 751px) {
+  .archive-pagination {
+    width: 700px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 120px;
+  }
+  .archive-pagination ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .archive-pagination li {
+    list-style: none;
+    padding: 6px 12px;
+  }
+  .archive-pagination li:nth-child(3) {
+    background-color: #333;
+    color: #fff;
+  }
+  .archive-pagination li:nth-child(n+3):nth-child(-n+11) {
+    border: 1px solid #333;
+    margin-left: 8px;
+  }
+
+  .archive-pagination-pc {
+    display: none;
+  }
+}
+/*# sourceMappingURL=project.css.map */
