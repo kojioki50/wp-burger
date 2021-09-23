@@ -240,10 +240,10 @@
   }
   .each-img-left h2,
 .each-img-right h2 {
-    color: #fff;
     font-size: 44px;
     margin: 20px;
     padding-top: 20px;
+    color: #fff;
   }
   .each-img-left h2:after,
 .each-img-right h2:after {

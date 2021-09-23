@@ -6,25 +6,19 @@
   }
 }
 
- h2 {
-      color:#fff;
-      font-size: 44px;
-      margin:20px;
-      padding-top: 20px;
+h1{
+  position: absolute;
+  z-index:1;
+  color:#ccc;
+  line-height: 1.2;
+  font-size: 36px;
+  
+  span{
 
-      &:after{
-        position: absolute;
-        display: inline-block;
-        top:100px;
-        left:30px;
-        content: "";
-        width: 50px;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 2px;
-
-    }
+    font-size: 16px;
   }
+}
+
 
 h3{
   font-size:24px;

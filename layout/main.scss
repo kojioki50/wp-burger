@@ -122,7 +122,9 @@
 
 
 
+
 @media screen and (min-width:751px) and (max-width:1200px){
+
 
    .p-top-img{
     background: url("../image/mainvisual-sp@2x.jpg") no-repeat center center;
@@ -212,14 +214,6 @@
     z-index:100;
   }
   
-  // .half-mask{
-  //   height:350px;
-  //   width:100%;
-  //   background-color: #707070;
-  //   opacity:0.5;
-  //   position: absolute;
-  //   z-index:100;
-  // }
 
   
 .p-modal{
@@ -250,8 +244,6 @@
 
 
 @media screen and (min-width: 1201px) {
-
-
     .p-top-img{
     background: url("../image/mainvisual-sp@2x.jpg") no-repeat center center;
     background-size: cover;
@@ -281,11 +273,11 @@
     height: 650px;
     position:relative;
     width:100%;
-     h2 {
-      color:#fff;
+    h2 {
       font-size: 44px;
       margin:20px;
       padding-top: 20px;
+      color:#fff;
 
       &:after{
         position: absolute;

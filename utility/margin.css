@@ -1,0 +1,119 @@
+.p-archive-img h1 {
+  margin-left: 37px;
+  padding-top: 102px;
+}
+
+.p-archive-section {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 0 15px;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .p-archive-section {
+    padding-right: 43px;
+    padding-left: 43px;
+  }
+}
+@media (min-width: 1201px) {
+  .p-archive-section {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+.p-archive-section h2 {
+  margin: 30px 0;
+}
+.p-archive-section p {
+  margin-bottom: 20px;
+}
+
+.p-archive-item-1,
+.p-archive-item-2,
+.p-archive-item-3,
+.p-archive-item-4,
+.p-archive-item-5 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .p-archive-item-1,
+.p-archive-item-2,
+.p-archive-item-3,
+.p-archive-item-4,
+.p-archive-item-5 {
+    padding-right: 43px;
+    padding-left: 43px;
+  }
+}
+@media (min-width: 1201px) {
+  .p-archive-item-1,
+.p-archive-item-2,
+.p-archive-item-3,
+.p-archive-item-4,
+.p-archive-item-5 {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+.p-archive-item-1 h3,
+.p-archive-item-2 h3,
+.p-archive-item-3 h3,
+.p-archive-item-4 h3,
+.p-archive-item-5 h3 {
+  margin-bottom: 24px;
+  margin-left: 17px;
+  padding-top: 20px;
+}
+.p-archive-item-1 h4,
+.p-archive-item-2 h4,
+.p-archive-item-3 h4,
+.p-archive-item-4 h4,
+.p-archive-item-5 h4 {
+  margin-bottom: 10px;
+  margin-left: 17px;
+}
+.p-archive-item-1 p,
+.p-archive-item-2 p,
+.p-archive-item-3 p,
+.p-archive-item-4 p,
+.p-archive-item-5 p {
+  margin-left: 17px;
+  line-height: 30px;
+  padding-right: 60px;
+}
+.p-archive-item-1 button,
+.p-archive-item-2 button,
+.p-archive-item-3 button,
+.p-archive-item-4 button,
+.p-archive-item-5 button {
+  display: block;
+  margin: 50px auto 0;
+  padding: 10px 40px;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .p-archive-item-1 button,
+.p-archive-item-2 button,
+.p-archive-item-3 button,
+.p-archive-item-4 button,
+.p-archive-item-5 button {
+    margin: 40px auto 0;
+  }
+}
+@media (min-width: 1201px) {
+  .p-archive-item-1 button,
+.p-archive-item-2 button,
+.p-archive-item-3 button,
+.p-archive-item-4 button,
+.p-archive-item-5 button {
+    margin: 40px auto 0;
+  }
+}
+
+.archive-pagination-pc {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=margin.css.map */
