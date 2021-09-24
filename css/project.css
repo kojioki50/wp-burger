@@ -21,6 +21,10 @@
   background: url("../image/p-archive-img@2x.jpg") no-repeat left center;
   position: relative;
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 50%;
+     object-position: 0 50%;
 }
 
 .archive-img-mask {
@@ -173,5 +177,134 @@
   .archive-pagination-pc {
     display: none;
   }
+}
+.p-single-img {
+  height: 250px;
+  width: auto;
+  background: url("../image/cheeseburger3@2x.png") no-repeat center center;
+  position: relative;
+  background-size: cover;
+}
+.p-single-img h1 {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  padding-left: 20px;
+}
+
+blockquote {
+  background-color: #F5F5F5;
+  height: 600px;
+  position: relative;
+}
+blockquote p:nth-of-type(2) {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+blockquote p:nth-of-type(2) a {
+  margin-left: 10px;
+  border-bottom: solid 0.1px;
+  letter-spacing: 0.2em;
+}
+
+.p-singlemain1-img {
+  height: 150px;
+  width: 100%;
+  background: url("../image/single-main.png") no-repeat bottom center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.single-container-box .single-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+}
+.single-container-box .single-container:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.single-container-box .single-container .p-singlemain2-img {
+  height: 150px;
+  width: 100%;
+  background: url("../image/single-flex@2x.png") no-repeat bottom center;
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.single-container-box .single-container:last-child .p-singlemain2-img {
+  height: 150px;
+  width: 100%;
+  background: url("../image/single-flex@2x.png") no-repeat bottom center;
+  background-size: cover;
+}
+.single-container-box p {
+  width: 100%;
+}
+
+.p-singlemain3-img {
+  height: 165px;
+  width: 265px;
+  background: url("../image/single-middle@2x.png") no-repeat bottom center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto 30px;
+}
+
+.p-singlemaincover-img {
+  height: 250px;
+  width: 100%;
+  background: url("../image/single-large@2x.png") no-repeat bottom center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: f5f5f5;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table .width40 {
+  width: 45%;
+}
+table .width60 {
+  width: 55%;
+}
+table td {
+  border: #333 1px solid;
+  text-align: center;
+}
+
+.p-single-section button {
+  padding: 30px 30px;
+  background-color: #F2EDE9;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 1px solid;
+}
+
+b {
+  display: inline-block;
 }
 /*# sourceMappingURL=project.css.map */
