@@ -31,7 +31,11 @@
   @include breakpoint( tablet ){
     width:100%;
   }
+  @include breakpoint( pc ){
+    width:100%;
+  }
 }
+
 
 .p-archive-img{
   height: 280px;
@@ -64,6 +68,10 @@ background-color: rgba(0,0,0,.3);
   width:750px;
 
 }
+  @include breakpoint( pc ){
+  width:750px;
+
+}
 }
 
 
@@ -85,6 +93,13 @@ background-color: rgba(0,0,0,.3);
 
 
 }
+  @include breakpoint( pc ){
+  height: 350px;
+  width:100%;
+  display: flex;
+
+
+}
 }
 
 .img-item-1,
@@ -99,9 +114,14 @@ background-color: rgba(0,0,0,.3);
   object-fit:cover;
   @include breakpoint( tablet ){
     object-position: 0 50%;
-    
-  height:100%;
-  width:50%;
+    height:100%;
+    width:50%;
+
+}
+  @include breakpoint( pc ){
+    object-position: 0 50%;
+    height:100%;
+    width:50%;
 
 }
 
@@ -116,6 +136,12 @@ background-color: rgba(0,0,0,.3);
   padding-bottom: 60px;
   position: relative;
   @include breakpoint( tablet ){
+
+  height:100%;
+  width:50%;
+
+}
+  @include breakpoint( pc ){
 
   height:100%;
   width:50%;
@@ -190,6 +216,38 @@ button{
 }
 
    }
+@include breakpoint( pc ){
+.archive-pagination{
+  width:700px;
+  height: 200px;
+  margin:0 auto;
+  display: block;
+  padding-top: 120px;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+    li{
+      list-style: none;
+      padding:6px 12px;
+    }
+     li:nth-child(3){
+       background-color: #333;
+       color:#fff;
+     }
+    li:nth-child(n+3):nth-child(-n+11){
+      border: 1px solid #333;
+      margin-left: 8px;
+      
+    }
+  }
+.archive-pagination-pc{
+  display: none;
+}
+
+   }
 
   .p-single-img{
   height: 250px;
@@ -203,7 +261,7 @@ button{
     left: 0;
     padding-left: 20px;
   }
- @media (min-width: 751px) and (max-width: 1200px) {
+ @include breakpoint( tablet ){
   
     height: 500px;
   
@@ -212,7 +270,7 @@ button{
   }
 
 }
-@media (min-width: 1201px) {
+@include breakpoint( pc ){
  
     height: 500px;
   
