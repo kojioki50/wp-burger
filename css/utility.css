@@ -153,6 +153,10 @@
   margin-bottom: 30px;
 }
 
+.single-main-area {
+  padding-bottom: 184px;
+}
+
 .p-single-section blockquote {
   padding: 30px 20px 0;
   margin-bottom: 30px;
@@ -175,8 +179,28 @@
 .single-container-box .single-container .p-singlemain2-img {
   margin-right: 10px;
 }
+@media (min-width: 751px) and (max-width: 1200px) {
+  .single-container-box .single-container .p-singlemain2-img {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1201px) {
+  .single-container-box .single-container .p-singlemain2-img {
+    margin-right: 40px;
+  }
+}
 .single-container-box .single-container:last-child .p-singlemain2-img {
   margin-left: 10px;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .single-container-box .single-container:last-child .p-singlemain2-img {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1201px) {
+  .single-container-box .single-container:last-child .p-singlemain2-img {
+    margin-left: 40px;
+  }
 }
 
 ol:nth-child(1) {
@@ -213,15 +237,11 @@ ul:nth-of-type(3) {
 table {
   margin: 30px 0;
 }
-td{
- padding:30px;
- }
+table td {
+  padding: 30px;
+}
 
 button {
   margin-bottom: 30px;
-}
-
-b {
-  margin-bottom: 184px;
 }
 /*# sourceMappingURL=utility.css.map */

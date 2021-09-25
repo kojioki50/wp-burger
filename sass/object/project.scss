@@ -1,9 +1,19 @@
 @mixin breakpoint($point) {
-  @if $point == tablet{
-    @media (min-width:751px) {
+  @if $point == sp{
+    @media (max-width:750px) {
       @content;
     }
   }
+  @else if $point == tablet{
+    @media (min-width:751px) and (max-width:1200px) {
+      @content;
+  }
+}
+  @else if $point == pc{
+    @media (min-width:1201px) {
+      @content;
+  }
+}
 }
 
 
@@ -187,13 +197,29 @@ button{
   background: url("../image/cheeseburger3@2x.png") no-repeat center center;
   position: relative;
   background-size: cover;
-
   h1{
     position: absolute;
     top: 45%;
     left: 0;
     padding-left: 20px;
   }
+ @media (min-width: 751px) and (max-width: 1200px) {
+  
+    height: 500px;
+  
+   h1 {
+    padding-left: 50px;
+  }
+
+}
+@media (min-width: 1201px) {
+ 
+    height: 500px;
+  
+   h1 {
+    padding-left: 100px;
+  }
+}
 }
 
 blockquote{
@@ -221,20 +247,32 @@ blockquote{
   no-repeat bottom center;
   background-size: cover;
   object-fit: cover;
+  object-position: center;
+
+   @include breakpoint( tablet ){
+    height:265px;
+  }
+  @include breakpoint( pc ){
+    height:500px;
+  }
 
 }
 
 
 
 .single-container-box{
+  
+
 .single-container
 {
+ 
   display:flex;
-  height: 250px;
+  
 
 }
 
   .single-container:last-child{
+  
     display:flex;
     flex-direction:row-reverse;
   }
@@ -247,6 +285,13 @@ blockquote{
   background-size: cover;
   object-fit: contain;
   object-position: bottom;
+  @include breakpoint( tablet ){
+    
+    height:190px;
+  }
+   @include breakpoint( pc ){
+    height:300px;
+  }
 }
 
  .single-container:last-child .p-singlemain2-img{
@@ -255,6 +300,15 @@ blockquote{
   background: url("../image/single-flex@2x.png")
   no-repeat  bottom center ;
   background-size: cover;
+  object-fit: contain;
+  object-position: bottom;
+  @include breakpoint( tablet ){
+    
+    height:190px;
+  }
+   @include breakpoint( pc ){
+    height:300px;
+  }
 }
 p{
   width:100%;
@@ -269,6 +323,14 @@ p{
   background-size: cover;
   object-fit: cover;
   margin: 0 auto 30px;
+   @include breakpoint( tablet ){
+     width:580px;
+    height:360px;
+  }
+  @include breakpoint( pc ){
+     width:580px;
+    height:360px;
+  }
 }
 
 .p-singlemaincover-img{
@@ -280,10 +342,40 @@ p{
   object-fit: cover;
   object-position: left;
   margin-bottom: 20px;
+  
 }
 
+@include breakpoint( tablet ){
+     .cover-imgs{
+       display: flex;
+       flex-wrap: wrap;
+       width:100%;
+       .p-singlemaincover-img{
+      width:calc((100% - 32px) / 2);
+      height:205px;
+       }
+       .p-singlemaincover-img:nth-child(odd){
+        margin-right:16px;
+       }
+     }
+    }
+    @include breakpoint( pc ){
+     .cover-imgs{
+       display: flex;
+       flex-wrap: wrap;
+       width:100%;
+       .p-singlemaincover-img{
+       width: calc((100% - 60px) / 3);
+      height:200px;
+      margin-right:20px;
+       }
+     
+     }
+    }
+
+
 pre{
-  background-color: f5f5f5;
+  background-color: #f5f5f5;
 }
 
 table{
@@ -315,11 +407,51 @@ button{
   border-radius: 20px;
   font-weight: bold;
   border: 1px solid;
+    @include breakpoint( tablet ){
+    width:60%;
+  }
+    @include breakpoint( pc ){
+    width:40%;
+  }
 }
 
 b{
-   display: inline-block;
+   display: block;
 }
+
+.p-page-img{
+  height: 250px;
+  width: auto;
+  background: url("../image/page-title_shop@2x.jpg") no-repeat center center;
+  position: relative;
+  background-size: cover;
+  h1{
+    position: absolute;
+    top: 45%;
+    left:0px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: 751px) and (max-width: 1200px) {
+  
+    height: 500px;
+  
+   h1 {
+    padding-left: 50px;
+  }
+
+}
+@media (min-width: 1201px) {
+ 
+    height: 500px;
+  
+   h1 {
+    padding-left: 100px;
+  }
+}
+}
+
+
 
 
 

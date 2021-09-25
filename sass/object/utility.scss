@@ -144,6 +144,10 @@ margin-top: 70px;
 margin-bottom: 30px;
 }
 
+.single-main-area{
+  padding-bottom: 184px;
+}
+
 .p-single-section{
 blockquote{
   padding:30px 20px 0;
@@ -174,10 +178,24 @@ blockquote{
 
   .single-container .p-singlemain2-img{
     margin-right:10px;
+    @include breakpoint( tablet ){
+    
+     margin-right:20px;
+  }
+   @include breakpoint( pc ){
+     margin-right:40px;
+  }
   }
 
   .single-container:last-child .p-singlemain2-img{
     margin-left:10px;
+    @include breakpoint( tablet ){
+    
+    margin-left:20px;
+  }
+   @include breakpoint( pc ){
+    margin-left:40px;
+  }
   }
 }
 
@@ -225,7 +243,4 @@ blockquote{
     margin-bottom: 30px;
   }
 
-  b{
-   
-    margin-bottom: 184px;
-  }
+ 
