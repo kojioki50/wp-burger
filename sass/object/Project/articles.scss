@@ -1,0 +1,313 @@
+@mixin breakpoint($point) {
+  @if $point == sp{
+    @media (max-width:750px) {
+      @content;
+    }
+  }
+  @else if $point == tablet{
+    @media (min-width:751px) and (max-width:1200px) {
+      @content;
+  }
+}
+  @else if $point == pc{
+    @media (min-width:1201px) {
+      @content;
+  }
+}
+}
+
+.p-imgs{
+    display: block;
+    margin: 50px 20px;
+    height:auto;
+    @include breakpoint( tablet ){
+    display: flex;
+    justify-content: space-between;
+    margin:40px;
+  }
+    @include breakpoint( pc ){
+    display: flex;
+    justify-content: space-between;
+    margin:40px;
+  }
+  }
+  
+  .each-img-left{
+    background: url("../image/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108@2x.png") no-repeat center center;
+      margin-right:0;
+      @include breakpoint( tablet ){
+        margin-right: 40px;
+      }
+      @include breakpoint( pc ){
+        margin-right: 40px;
+      }
+    }
+    
+  
+  
+  .each-img-right{
+    background: url("../image/473d814b175bd517b56eb309f2958725@2x.png") no-repeat center center;
+  }
+  
+  .each-img-left,
+  .each-img-right{
+    height: 650px;
+    margin-top: 50px;
+    position:relative;
+    width:100%;
+    h2 {
+      color:#fff;
+      font-size: 44px;
+      margin:20px;
+      padding-top: 20px;
+      
+      &:after{
+        position: absolute;
+        display: inline-block;
+        top:100px;
+        left:30px;
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+        @include breakpoint( tablet ){
+          top:120px;
+        }
+        
+        @include breakpoint( pc ){
+          top:120px;
+        }
+        
+      }
+    }
+  }
+    
+    
+    .container{
+      position:absolute;
+      bottom:0px;
+      width:100%;
+      padding-right:10px;
+      padding-left:10px;
+
+      .item-1,
+      .item-2{
+      height: auto;
+      background-color: rgba(255,255,255, 0.8);
+      padding: 20px 10px;
+      margin-bottom: 10px;
+
+}
+}
+
+.archive-section-text{
+  width:100%;
+  @include breakpoint( tablet ){
+  width:750px;
+
+}
+  @include breakpoint( pc ){
+  width:750px;
+
+}
+}
+
+
+.p-archive-item-1,
+.p-archive-item-2,
+.p-archive-item-3,
+.p-archive-item-4,
+.p-archive-item-5
+{
+  height: 585px;
+  width:100%;
+  
+
+  
+  @include breakpoint( tablet ){
+  height: 350px;
+  width:100%;
+  display: flex;
+
+
+}
+  @include breakpoint( pc ){
+  height: 350px;
+  width:100%;
+  display: flex;
+
+
+}
+}
+
+.img-item-1,
+.img-item-2,
+.img-item-3,
+.img-item-4,
+.img-item-5
+{
+  vertical-align: bottom;
+  width:100%;
+  height: 40%;
+  object-fit:cover;
+  @include breakpoint( tablet ){
+    object-position: 0 50%;
+    height:100%;
+    width:50%;
+
+}
+  @include breakpoint( pc ){
+    object-position: 0 50%;
+    height:100%;
+    width:50%;
+
+}
+
+}
+
+
+.archive-container{
+  background-color: #3C2B1C;
+  color:#fff;
+  height:60%;
+  width:100%;
+  padding-bottom: 60px;
+  position: relative;
+  @include breakpoint( tablet ){
+
+  height:100%;
+  width:50%;
+
+}
+  @include breakpoint( pc ){
+
+  height:100%;
+  width:50%;
+
+}
+  h3{
+    color: #fff;
+  }
+
+        p{
+          color: #fff;
+
+}
+
+button{
+  display: inline-block;
+  background-color:#fff;
+  color:#707070;
+  border-radius:20px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 30px;
+}
+}
+
+blockquote{
+  background-color: #F5F5F5;
+  height: 600px;
+  position: relative;
+
+ & p:nth-of-type(2){
+   position: absolute;
+   bottom: 20px;
+   left:20px;
+
+   & a{
+     margin-left:10px;
+     border-bottom: solid .1px;
+     letter-spacing: 0.2em;
+   }
+ }
+}
+
+.single-container-box{
+  
+
+.single-container
+{
+ 
+  display:flex;
+  
+
+}
+
+  .single-container:last-child{
+  
+    display:flex;
+    flex-direction:row-reverse;
+  }
+
+ .single-container .p-singlemain2-img{
+  height:150px;
+  width:100%;
+  background: url("../image/single-flex@2x.png")
+  no-repeat  bottom center ;
+  background-size: cover;
+  object-fit: contain;
+  object-position: bottom;
+  @include breakpoint( tablet ){
+    
+    height:190px;
+  }
+   @include breakpoint( pc ){
+    height:300px;
+  }
+}
+
+ .single-container:last-child .p-singlemain2-img{
+  height:150px;
+  width:100%;
+  background: url("../image/single-flex@2x.png")
+  no-repeat  bottom center ;
+  background-size: cover;
+  object-fit: contain;
+  object-position: bottom;
+  @include breakpoint( tablet ){
+    
+    height:190px;
+  }
+   @include breakpoint( pc ){
+    height:300px;
+  }
+}
+p{
+  width:100%;
+}
+}
+
+
+pre{
+  background-color: #f5f5f5;
+}
+
+table{
+  border-collapse: collapse;
+  width:100%;
+
+  .width40{
+    width:45%;
+  }
+  
+  .width60{
+    width:55%
+  }
+
+td{
+  border: #333 1px solid;
+  text-align: center;
+  
+}
+}
+
+
+
+b{
+   display: block;
+}
+
+

@@ -1,11 +1,3 @@
-@mixin breakpoint($point) {
-  @if $point == tablet{
-    @media (min-width:751px) and (max-width:1200px){
-      @content;
-    }
-  }
-}
-
 .l-footer{
     color:#fff;
     background-color: #967f6a;
