@@ -17,66 +17,92 @@
 }
 
 .p-imgs{
-    display: block;
-    margin: 50px 20px;
     height:auto;
     @include breakpoint( tablet ){
     display: flex;
-    justify-content: space-between;
-    margin:40px;
+    justify-content: center;
   }
     @include breakpoint( pc ){
     display: flex;
-    justify-content: space-between;
-    margin:40px;
+    justify-content: center;
   }
   }
   
   .each-img-left{
-    background: url("../image/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108@2x.png") no-repeat center center;
-      margin-right:0;
-      @include breakpoint( tablet ){
-        margin-right: 40px;
+    background: url("../image/three-burgers.png") no-repeat center center;
+     background-size: cover;
+     position:relative;
+     margin: 20px auto;
+     height: 650px;
+     width:335px;
+     @include breakpoint( tablet ){
+        width:357px;
+        height: 680px;
+        margin: 40px 40px 40px 40px;
+         background-size: cover;
       }
       @include breakpoint( pc ){
-        margin-right: 40px;
-      }
+        width:625px;
+        height:1190px;
+        margin: 120px 80px 120px 110px;
+         background-size: cover;
+         overflow: hidden;
     }
-    
+  }
   
   
   .each-img-right{
     background: url("../image/473d814b175bd517b56eb309f2958725@2x.png") no-repeat center center;
+    background-size: cover;
+    position:relative;
+    margin: 20px auto;
+    height: 650px;
+    width:335px;
+    @include breakpoint( tablet ){
+        width:357px;
+        height: 680px;
+        background-size: cover;
+         margin: 40px 40px 40px 0;
+      }
+      @include breakpoint( pc ){
+        background-size: cover;
+          width:625px;
+          height:1190px;
+          margin: 120px 110px 120px 0;
+          overflow: hidden;
+        }
   }
   
   .each-img-left,
   .each-img-right{
-    height: 650px;
-    margin-top: 50px;
-    position:relative;
-    width:100%;
+   
+    
+  
+      
     h2 {
       color:#fff;
       font-size: 44px;
-      margin:20px;
-      padding-top: 20px;
+      margin-top:10px;
+      margin-bottom:20px;
+      margin-left:10px;
       
       &:after{
         position: absolute;
         display: inline-block;
-        top:100px;
-        left:30px;
+        top:75px;
+        left:15px;
         content: "";
         width: 50px;
         height: 3px;
         background-color: #fff;
         border-radius: 2px;
         @include breakpoint( tablet ){
-          top:120px;
+          top:90px;
         }
         
         @include breakpoint( pc ){
-          top:120px;
+          margin-top:20px;
+          top:100px;
         }
         
       }
@@ -85,21 +111,52 @@
     
     
     .container{
-      position:absolute;
-      bottom:0px;
+      
       width:100%;
       padding-right:10px;
       padding-left:10px;
 
       .item-1,
       .item-2{
-      height: auto;
+      height: 175px;
       background-color: rgba(255,255,255, 0.8);
       padding: 20px 10px;
-      margin-bottom: 10px;
+      margin-bottom:10px;
+       h3 {
+         padding-bottom:20px;
+         @include breakpoint( pc ){
+           padding-bottom:26px;
+         }
+       }
+       
+        }
+      
+
 
 }
+    .container .item-1{
+      margin-top:210px;
+      @include breakpoint( tablet ){
+         margin-top:230px;
 }
+      @include breakpoint( pc ){
+        margin-top:0;
+        position:absolute;
+        top:800px;
+        left:20px;
+        right: 20px;
+      }
+    }
+      .container .item-2{
+      @include breakpoint( pc ){
+        margin-top:0;
+        position:absolute;
+        top:1000px;
+        left:20px;
+        right: 20px;
+      }
+
+    }
 
 .archive-section-text{
   width:100%;

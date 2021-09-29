@@ -27,6 +27,9 @@ p {
   padding-right: 50px;
   text-align: right;
   position: relative;
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 @media (min-width: 1201px) {
   .openbtn {

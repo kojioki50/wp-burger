@@ -1,4 +1,5 @@
 <div class="l-sidebar">
+      <h2>Menu</h2>
       <h3>バーガー</h3>
       <ul>
         <li>ハンバーガー</li>

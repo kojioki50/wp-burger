@@ -50,9 +50,9 @@ p{
   padding-right: 50px;
   text-align: right;
   position: relative;
-//     @include breakpoint( tablet ){
-//       display: none;
-// }
+  font-size: 34px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
      @include breakpoint( pc ){
       display: none;
   }
@@ -63,11 +63,6 @@ span:nth-of-type(1){
   cursor:pointer;
   display: inline-block;
   font-size: 26px;
-//   @include breakpoint( tablet ){
-//     display: none;
-    
-  
-// }
 }
 
 span:nth-of-type(2){

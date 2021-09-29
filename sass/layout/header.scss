@@ -1,5 +1,15 @@
-@mixin breakpoint($point) {
-  @if $point == pc {
+  @mixin breakpoint($point) {
+  @if $point == sp{
+    @media (max-width:750px) {
+      @content;
+    }
+  }
+  @else if $point == tablet{
+    @media (min-width:751px) and (max-width:1200px) {
+      @content;
+  }
+}
+  @else if $point == pc{
     @media (min-width:1201px) {
       @content;
   }
@@ -12,52 +22,75 @@
 }
 
 .header-logo{
-  margin:0 auto;
   padding:35px 0;
   text-align: center;
+  img{
+    line-height: 84x;
+    width:203px;
+    @include breakpoint(pc){
+        width:324px;
+    
+    }
+  }
 }
 #search-wrap{
   text-align: center;
   
   
   .use_icon {
-    border: 1px solid black;
+    border: 1px solid #707070;
     display: inline-block;
-    background: #fff url("../image/_i_icon_10823_icon_108231_256.png") no-repeat left center;
+    background: #fff url("../image/la-search@2x.png") no-repeat 12px center;
     background-size: 20px 20px;
-    height: 30px;
-    width:300px;
+    height: 46px;
+    width:230px;
     border-radius: 5px;
+    margin-right:12px;
+    @include breakpoint(tablet){
+    width: 396px;
+    }
   }
   .c-btn{
-    padding:5px 50px;
+    padding:10px 23px;
     display: inline-block;
     background-color: #E7E2DD;
     border-radius: 5px;
-    border: 1px solid;
+    border: 1px solid #707070;
+    color:#707070;
+     @include breakpoint(tablet){
+    padding:10px 52px;
   }
+}
 }
 
 @include breakpoint(pc){
 .l-header{
+  height:220px;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
+  padding-bottom: 0;
 }
 .header-logo{
-  padding:35px 0;
-  margin-left: 20px;
+  padding:65px 0 65px 65px;
+  height:auto;
 }
 #search-wrap{
-  margin: 75px 20px ;
+  margin: 0 30px 0 0;
+  padding:85px 0;
   
   
   
   .use_icon {
     height: 36px;
+    width: 396px;
    
   }
-  
-  
+  .c-btn{
+    padding:10px 52px;
+   
+  }
+
+ 
 }
 
 }

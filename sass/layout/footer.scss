@@ -1,21 +1,44 @@
+  @mixin breakpoint($point) {
+  @if $point == sp{
+    @media (max-width:750px) {
+      @content;
+    }
+  }
+  @else if $point == tablet{
+    @media (min-width:751px) and (max-width:1200px) {
+      @content;
+  }
+}
+  @else if $point == pc{
+    @media (min-width:1201px) {
+      @content;
+  }
+}
+}
+
+
 .l-footer{
+    background: url("../image/footer.png") no-repeat center center;
+    background-size: cover;
+    height:150px;
+    width:100%;
     color:#fff;
     background-color: #967f6a;
     text-align: center;
-    height: 100px;
+    
     h4{
-        padding-top: 20px;
+        padding-top: 40px;
          color:#fff;
+         font-size: 20px;
     }
         p{
-            padding-top:20px;
-            padding-bottom: 10px;
+            padding-top:35px;
+            padding-bottom: 30px;
             font-size:14px;
             color:#fff;
         }
 
 }
-
 
 
 

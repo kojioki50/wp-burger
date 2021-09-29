@@ -20,12 +20,23 @@
     background: url("../image/mainvisual-sp@2x.jpg") no-repeat center center;
     background-size: cover;
     height:375px;
+    width:100%;
+    @include breakpoint( pc ){
+    background: url("../image/mainvisual-pc@2x.jpg") no-repeat center center;
+    background-size:cover;
+    width:auto;
+    overflow: hidden;
+  }
    
   
   h1{
     color:white;
     padding-top:170px;
     margin-left: 85px;
+    font-size: 36px;
+    @include breakpoint( sp ){
+    margin-left:35px;
+  }
   }  
 }
 
@@ -142,42 +153,70 @@ background-color: rgba(0,0,0,.3);
           }
      @include breakpoint( pc ){
         height:100%;
+        
           }
   }
 
   
 .p-modal{
   top: 40px;
-  left:0;
+  left:42px;
+  right:40px;
   color:#fff;
   position: absolute;
   z-index:101;
+   @include breakpoint( pc ){
+        top:80px;
+        left:119px;
+        right:500px;
+        height:570px;
+
+          }
  
   h2
   {
     font-size:30px;
-    padding-bottom: 20px;
     color:#fff;
+    padding-bottom: 40px;
+    @include breakpoint( pc ){
+      padding-bottom: 120px;
+        font-size: 36px;
+          }
+    
+
+     &:after{
+        position: absolute;
+        display: inline-block;
+        top:60px;
+        left:0;
+        content: "";
+        width: 70px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+        @include breakpoint( pc ){
+          top:110px;
+          }
+       
+       
+      }
     
   }
+    .text-container{
+      @include breakpoint( pc ){
+        overflow: hidden;
+        max-width:90%;
+      }
+        p{
+          font-size:14px;
+          line-height: 30px;
+          color:#fff;
+          text-align: justify;
+          @include breakpoint( pc ){
+            font-size:16px;
 
-  h2{
-  @include breakpoint( tablet ){
-       margin-left:20px;
+            }
       }
     }
 
-  p{
-    font-size:14px;
-    line-height: 40px;
-    color:#fff;
-    padding:20px;
-        }
-         p{
-        @include breakpoint( pc ){
-            width:63%;
-            }
-          }
 }
-
-  
