@@ -205,7 +205,8 @@ background-color: rgba(0,0,0,.3);
     .text-container{
       @include breakpoint( pc ){
         overflow: hidden;
-        max-width:90%;
+        width:697px;
+        
       }
         p{
           font-size:14px;

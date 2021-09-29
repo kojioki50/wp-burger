@@ -191,7 +191,7 @@
 @media (min-width: 1201px) {
   .p-modal .text-container {
     overflow: hidden;
-    max-width: 90%;
+    width: 697px;
   }
 }
 .p-modal .text-container p {
