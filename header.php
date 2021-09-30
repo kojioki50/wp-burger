@@ -19,7 +19,7 @@
         </div>
         <div id="search-wrap">
           <form role="search" method="get" action="">
-            <input type="text" value="     " name="" id="search-text" class="use_icon">
+            <input type="text" value="        " name="" id="search-text" class="use_icon">
             <button type="submit" name="search" class="c-btn">検索</button>
           </form>
         </div>
