@@ -127,7 +127,7 @@
 @media (min-width: 1201px) {
   .container .item-1 h3,
 .container .item-2 h3 {
-    padding-bottom: 20px;
+    padding-bottom: 26px;
   }
 }
 
@@ -241,6 +241,120 @@
        object-position: 0 50%;
     height: 100%;
     width: 50%;
+  }
+}
+
+.p-map {
+  position: relative;
+}
+.p-map .map {
+  background: url("../image/map.png") no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .p-map .map {
+    height: 415px;
+  }
+}
+@media (min-width: 1201px) {
+  .p-map .map {
+    height: 650px;
+  }
+}
+
+.full-mask {
+  height: 100%;
+  width: 100%;
+  background-color: #707070;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 100;
+}
+@media (min-width: 1201px) {
+  .full-mask {
+    width: 63%;
+  }
+}
+
+.half-mask {
+  height: 350px;
+  width: 100%;
+  background-color: #707070;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 100;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .half-mask {
+    height: 100%;
+  }
+}
+@media (min-width: 1201px) {
+  .half-mask {
+    height: 100%;
+  }
+}
+
+.p-modal {
+  top: 40px;
+  left: 42px;
+  right: 40px;
+  color: #fff;
+  position: absolute;
+  z-index: 101;
+}
+@media (min-width: 1201px) {
+  .p-modal {
+    top: 80px;
+    left: 119px;
+    right: 500px;
+    height: 570px;
+  }
+}
+.p-modal h2 {
+  font-size: 30px;
+  color: #fff;
+  padding-bottom: 40px;
+}
+@media (min-width: 1201px) {
+  .p-modal h2 {
+    padding-bottom: 120px;
+    font-size: 36px;
+  }
+}
+.p-modal h2:after {
+  position: absolute;
+  display: inline-block;
+  top: 60px;
+  left: 0;
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+@media (min-width: 1201px) {
+  .p-modal h2:after {
+    top: 110px;
+  }
+}
+@media (min-width: 1201px) {
+  .p-modal .text-container {
+    overflow: hidden;
+    width: 697px;
+  }
+}
+.p-modal .text-container p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  text-align: justify;
+}
+@media (min-width: 1201px) {
+  .p-modal .text-container p {
+    font-size: 16px;
   }
 }
 

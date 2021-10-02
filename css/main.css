@@ -62,6 +62,17 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+h1 {
+  position: absolute;
+  z-index: 1;
+  color: #ccc;
+  line-height: 1.2;
+  font-size: 36px;
+}
+h1 span {
+  font-size: 16px;
+}
+
 .p-single-img {
   height: 250px;
   width: auto;
@@ -92,117 +103,33 @@
   }
 }
 
-.p-map {
+.p-page-img {
+  height: 250px;
+  width: auto;
+  background: url("../image/page-title_shop@2x.jpg") no-repeat center center;
   position: relative;
-}
-.p-map .map {
-  background: url("../image/map.png") no-repeat center center;
   background-size: cover;
-  height: 700px;
-  width: 100%;
+}
+.p-page-img h1 {
+  position: absolute;
+  top: 45%;
+  left: 0px;
+  padding-left: 20px;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
-  .p-map .map {
-    height: 415px;
+  .p-page-img {
+    height: 500px;
+  }
+  .p-page-img h1 {
+    padding-left: 50px;
   }
 }
 @media (min-width: 1201px) {
-  .p-map .map {
-    height: 650px;
+  .p-page-img {
+    height: 500px;
   }
-}
-
-.full-mask {
-  height: 100%;
-  width: 100%;
-  background-color: #707070;
-  opacity: 0.7;
-  position: absolute;
-  z-index: 100;
-}
-@media (min-width: 1201px) {
-  .full-mask {
-    width: 63%;
-  }
-}
-
-.half-mask {
-  height: 350px;
-  width: 100%;
-  background-color: #707070;
-  opacity: 0.7;
-  position: absolute;
-  z-index: 100;
-}
-@media (min-width: 751px) and (max-width: 1200px) {
-  .half-mask {
-    height: 100%;
-  }
-}
-@media (min-width: 1201px) {
-  .half-mask {
-    height: 100%;
-  }
-}
-
-.p-modal {
-  top: 40px;
-  left: 42px;
-  right: 40px;
-  color: #fff;
-  position: absolute;
-  z-index: 101;
-}
-@media (min-width: 1201px) {
-  .p-modal {
-    top: 80px;
-    left: 119px;
-    right: 500px;
-    height: 570px;
-  }
-}
-.p-modal h2 {
-  font-size: 30px;
-  color: #fff;
-  padding-bottom: 40px;
-}
-@media (min-width: 1201px) {
-  .p-modal h2 {
-    padding-bottom: 120px;
-    font-size: 36px;
-  }
-}
-.p-modal h2:after {
-  position: absolute;
-  display: inline-block;
-  top: 60px;
-  left: 0;
-  content: "";
-  width: 70px;
-  height: 3px;
-  background-color: #fff;
-  border-radius: 2px;
-}
-@media (min-width: 1201px) {
-  .p-modal h2:after {
-    top: 110px;
-  }
-}
-@media (min-width: 1201px) {
-  .p-modal .text-container {
-    overflow: hidden;
-    width: 697px;
-  }
-}
-.p-modal .text-container p {
-  font-size: 14px;
-  line-height: 30px;
-  color: #fff;
-  text-align: justify;
-}
-@media (min-width: 1201px) {
-  .p-modal .text-container p {
-    font-size: 16px;
+  .p-page-img h1 {
+    padding-left: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */

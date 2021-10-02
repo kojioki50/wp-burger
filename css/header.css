@@ -2,17 +2,16 @@
   background-color: #fff7ef;
   padding-bottom: 50px;
 }
-
-.header-logo {
+.l-header .header-logo {
   padding: 35px 0;
   text-align: center;
 }
-.header-logo img {
+.l-header .header-logo img {
   line-height: 84x;
   width: 203px;
 }
 @media (min-width: 1201px) {
-  .header-logo img {
+  .l-header .header-logo img {
     width: 324px;
   }
 }

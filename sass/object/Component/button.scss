@@ -16,32 +16,6 @@
 }
 }
 
-h1{
-  position: absolute;
-  z-index:1;
-  color:#ccc;
-  line-height: 1.2;
-  font-size: 36px;
-
-  span{
-
-    font-size: 16px;
-  }
-}
-
-
-h3{
-  font-size:24px;
-  color:#333;
-
-}
-
-p{
-  font-size:16px;
-  color:#333;
-
-}
-
 .openbtn{
   width:100px;
   height:50px;
@@ -55,14 +29,18 @@ p{
   font-weight: 700;
      @include breakpoint( pc ){
       display: none;
-  }
-
-span:nth-of-type(1){
-  color:#707070;
-  transition: all .4s;
-  cursor:pointer;
-  display: inline-block;
-  font-size: 26px;
+    }
+    
+    
+    span:nth-of-type(1){
+      color:#707070;
+      transition: all .4s;
+      cursor:pointer;
+      display: inline-block;
+      font-size: 26px;
+      &:hover{
+       opacity:.5;
+      }
 }
 
 span:nth-of-type(2){
@@ -101,19 +79,19 @@ span:nth-of-type(2){
  }
 
  .p-single-section
-button{
-  padding: 30px 30px;
-  background-color: #F2EDE9;
-  width:100%;
-  height: auto;
-  display: inline-block;
-  border-radius: 20px;
-  font-weight: bold;
-  border: 1px solid;
-    @include breakpoint( tablet ){
-    width:60%;
-  }
-    @include breakpoint( pc ){
-    width:40%;
-  }
+  button{
+    padding: 30px 30px;
+    background-color: #F2EDE9;
+    width:100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid;
+      @include breakpoint( tablet ){
+      width:60%;
+    }
+      @include breakpoint( pc ){
+      width:40%;
+    }
 }

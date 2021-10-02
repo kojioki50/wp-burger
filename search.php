@@ -1,44 +1,20 @@
-<!DOCTYPE html>
-<html lang="ja">
+<?php get_header(); ?>
+    <?php
+    if (have_posts() && get_search_query()) :
+      while (have_posts()) :
+        the_post();
+        // get_template_part('template-parts/post/content', 'excerpt');
+      endwhile;
+    ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/sidebar.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/button.css">
-  <link rel="stylesheet" href="css/articles.css">
-  <link rel="stylesheet" href="css/gallery.css">
-  <link rel="stylesheet" href="css/pagination.css">
-  <link rel="stylesheet" href="css/utility.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <title>ハンバーガーメニューを作る</title>
-</head>
-
-<body>
-  <div class="l-wrapper">
-    <div class="l-main-area">
-
-
-      <header class="l-header">
-        <div class="openbtn"><span>MENU</span><span></span></div>
-        <div class="header-logo">
-          <img src="./image/pc_logo@2x.png">
+    <?php else : ?>
+      <div>
+        <div>
+          <p>検索キーワードに該当する記事がありませんでした。</p>
         </div>
-        <div id="search-wrap">
-          <form role="search" method="get" action="">
-            <input type="text" value="     " name="" id="search-text" class="use_icon">
-            <button type="submit" name="search" class="c-btn">検索</button>
-          </form>
-        </div>
-      </header>
+      </div>
+    <?php endif; ?>
+    
 
       <main class="archive-main">
         <div class="p-archive-img">
@@ -67,7 +43,7 @@
         </div>
 
         <div class="p-archive-item-1">
-          <img class="img-item-1" src="./image/cheeseburger.png">
+          <img class="img-item-1" src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
           <div class="archive-container">
             <h3>チーズバーガー</h3>
             <h4>小見出しが入ります</h4>
@@ -77,7 +53,7 @@
         </div>
 
         <div class="p-archive-item-2">
-          <img class="img-item-2" src="./image/cheeseburger.png">
+         <img class="img-item-2" src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
           <div class="archive-container">
             <h3>チーズバーガー</h3>
             <h4>小見出しが入ります</h4>
@@ -86,7 +62,7 @@
           </div>
         </div>
         <div class="p-archive-item-3">
-          <img class="img-item-3" src="./image/cheeseburger.png">
+          <img class="img-item-3" src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
           <div class="archive-container">
             <h3>チーズバーガー</h3>
             <h4>小見出しが入ります</h4>
@@ -95,7 +71,7 @@
           </div>
         </div>
         <div class="p-archive-item-4">
-          <img class="img-item-4" src="./image/cheeseburger.png">
+          <img class="img-item-4" src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
           <div class="archive-container">
             <h3>チーズバーガー</h3>
             <h4>小見出しが入ります</h4>
@@ -104,7 +80,7 @@
           </div>
         </div>
         <div class="p-archive-item-5">
-          <img class="img-item-5" src="./image/cheeseburger.png">
+          <img class="img-item-5" src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
           <div class="archive-container">
             <h3>チーズバーガー</h3>
             <h4>小見出しが入ります</h4>
@@ -137,50 +113,7 @@
       </main>
 
     </div>
-
-    <div class="l-sidebar">
-      <h2>Menu</h2>
-      <h3>バーガー</h3>
-      <ul>
-        <li>ハンバーガー</li>
-        <li>チーズバーガー</li>
-        <li>テリヤキバーガー</li>
-        <li>アボガドバーガー</li>
-        <li>フィッシュバーガー</li>
-        <li>ベーコンバーガー</li>
-        <li>チキンバーガー</li>
-      </ul>
-      <h3>サイド</h3>
-      <ul>
-        <li>ポテト</li>
-        <li>サラダ</li>
-        <li>ナゲット</li>
-        <li>コーン</li>
-      </ul>
-      <h3>ドリンク</h3>
-      <ul>
-        <li>コーラ</li>
-        <li>ファンタ</li>
-        <li>オレンジ</li>
-        <li>アップル</li>
-        <li>紅茶 (Ice/Hot)</li>
-        <li>コーヒー (Ice/Hot)</li>
-      </ul>
-
+ <?php get_sidebar(); ?>
     </div>
-    <span class="l-sidebar-mask"></span>
-
-
-  </div>
-
-  <div class="l-footer">
-    <h4>ショップ情報 ｜ ヒストリー</h4>
-    <p>Copyright: RaiseTech</p>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>
+   
