@@ -49,9 +49,22 @@
     width:230px;
     border-radius: 5px;
     margin-right:12px;
+    position: relative;
     @include breakpoint(tablet){
     width: 396px;
     }
+
+  .input{
+    position: absolute;
+    width:80%;
+    height: 100%;
+    top:0;
+    left:50px;
+    text-decoration: none;
+
+    
+  }
+
   }
   .c-btn{
     padding:10px 23px;
@@ -60,6 +73,8 @@
     border-radius: 5px;
     border: 1px solid #707070;
     color:#707070;
+    margin:0px;
+    vertical-align: top;
      @include breakpoint(tablet){
     padding:10px 52px;
   }

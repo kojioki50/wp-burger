@@ -8,30 +8,34 @@
 
         <div class="p-imgs">
           <div class="each-img-left">
-            <h2>Take Out</h2>
-            <div class="container">
-              <div class="item-1">
-                <h3>Take Out</h3>
-                <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+            <a href="<?php echo esc_url( home_url('/archive') ); ?>">
+              <h2>Take Out</h2>
+              <div class="container">
+                <div class="item-1">
+                  <h3>Take Out</h3>
+                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                </div>
+                <div class="item-2">
+                  <h3>Take Out</h3>
+                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                </div>
               </div>
-              <div class="item-2">
-                <h3>Take Out</h3>
-                <p>当店のテイクアウトで利用できる商品を掲載しています</p>
-              </div>
-            </div>
+            </a>
           </div>
           <div class="each-img-right">
-            <h2>Eat In</h2>
-            <div class="container">
-              <div class="item-1">
-                <h3>Eat In</h3>
-                <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+            <a href="<?php echo esc_url( home_url('/archive') ); ?>">
+              <h2>Eat In</h2>
+              <div class="container">
+                <div class="item-1">
+                  <h3>Eat In</h3>
+                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                </div>
+                <div class="item-2">
+                  <h3>Eat In</h3>
+                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                </div>
               </div>
-              <div class="item-2">
-                <h3>Eat In</h3>
-                <p>当店のテイクアウトで利用できる商品を掲載しています</p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
 

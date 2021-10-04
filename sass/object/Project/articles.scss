@@ -75,8 +75,18 @@
   
   .each-img-left,
   .each-img-right{
-   
-    
+    &:hover{
+    background-color: #fff;
+    opacity: .5;
+  }
+    a{
+      text-decoration: none;
+      color:#333;
+      
+      
+        
+      
+    }
   
       
     h2 {
@@ -168,8 +178,18 @@
 }
   @include breakpoint( pc ){
   width:750px;
-
+  margin:0 auto;
 }
+}
+
+.archive-nokeyword{
+  @include breakpoint( pc ){
+    h2 {
+      text-align:center;
+      margin-top: 200px;
+      margin-bottom: 500px;
+    }
+  }
 }
 
 

@@ -74,6 +74,16 @@
   }
 }
 
+.each-img-left:hover,
+.each-img-right:hover {
+  background-color: #fff;
+  opacity: 0.5;
+}
+.each-img-left a,
+.each-img-right a {
+  text-decoration: none;
+  color: #333;
+}
 .each-img-left h2,
 .each-img-right h2 {
   color: #fff;
@@ -170,6 +180,15 @@
 @media (min-width: 1201px) {
   .archive-section-text {
     width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1201px) {
+  .archive-nokeyword h2 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 500px;
   }
 }
 

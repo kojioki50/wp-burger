@@ -28,11 +28,19 @@
   width: 230px;
   border-radius: 5px;
   margin-right: 12px;
+  position: relative;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
   #search-wrap .use_icon {
     width: 396px;
   }
+}
+#search-wrap .use_icon .input {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 50px;
 }
 #search-wrap .c-btn {
   padding: 10px 23px;
@@ -41,6 +49,8 @@
   border-radius: 5px;
   border: 1px solid #707070;
   color: #707070;
+  margin: 0px;
+  vertical-align: top;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
   #search-wrap .c-btn {

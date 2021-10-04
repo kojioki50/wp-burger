@@ -14,6 +14,7 @@
 }
 
 .archive-pagination {
+  text-align: center;
   display: none;
 }
 
@@ -21,7 +22,7 @@
   .archive-pagination {
     width: 700px;
     height: 200px;
-    margin: 0 auto;
+    text-align: center;
     display: block;
     padding-top: 120px;
   }

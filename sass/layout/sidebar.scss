@@ -73,11 +73,22 @@
        padding-bottom: 35px;
        padding-top: 40px;
      
+       & a {
+         text-decoration: none;
+         color:inherit;
+         cursor:pointer;
+
+         &:hover{
+           opacity: .5;
+         }
+       }
+     
      &:nth-of-type(1){
        padding-top: 212px;
        @include breakpoint( pc ){
          padding-top: 85px;
        }
+      
      }
      }
   
