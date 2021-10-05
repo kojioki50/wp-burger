@@ -41,6 +41,7 @@
   height: 100%;
   top: 0;
   left: 50px;
+  text-decoration: none;
 }
 #search-wrap .c-btn {
   padding: 10px 23px;
@@ -69,8 +70,7 @@
             justify-content: space-between;
     padding-bottom: 0;
   }
-
-  .header-logo {
+  .l-header .header-logo {
     padding: 65px 0 65px 65px;
     height: auto;
   }

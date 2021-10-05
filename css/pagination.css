@@ -1,87 +1,25 @@
-.archive-pagination-pc {
-  width: 335px;
-}
-.archive-pagination-pc ul {
+.wp-pagenavi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 62px;
+  padding-bottom: 31px;
 }
-.archive-pagination-pc li {
-  list-style: none;
-}
-
-.archive-pagination {
-  text-align: center;
-  display: none;
-}
-
 @media (min-width: 751px) and (max-width: 1200px) {
-  .archive-pagination {
-    width: 700px;
-    height: 200px;
-    text-align: center;
-    display: block;
-    padding-top: 120px;
-  }
-  .archive-pagination ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .archive-pagination li {
-    list-style: none;
-    padding: 6px 12px;
-  }
-  .archive-pagination li:nth-child(3) {
-    background-color: #333;
-    color: #fff;
-  }
-  .archive-pagination li:nth-child(n+3):nth-child(-n+11) {
-    border: 1px solid #333;
-    margin-left: 8px;
-  }
-
-  .archive-pagination-pc {
-    display: none;
+  .wp-pagenavi {
+    margin-top: 106px;
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 1201px) {
-  .archive-pagination {
-    width: 700px;
-    height: 200px;
-    margin: 0 auto;
-    display: block;
-    padding-top: 120px;
+  .wp-pagenavi {
+    margin-top: 150px;
+    padding-bottom: 64px;
   }
-  .archive-pagination ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .archive-pagination li {
-    list-style: none;
-    padding: 6px 12px;
-  }
-  .archive-pagination li:nth-child(3) {
-    background-color: #333;
-    color: #fff;
-  }
-  .archive-pagination li:nth-child(n+3):nth-child(-n+11) {
-    border: 1px solid #333;
-    margin-left: 8px;
-  }
-
-  .archive-pagination-pc {
-    display: none;
-  }
+}
+.wp-pagenavi a {
+  display: block;
 }
 /*# sourceMappingURL=pagination.css.map */

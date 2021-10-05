@@ -23,10 +23,7 @@
               if (have_posts() && get_search_query()) :
                 while (have_posts()) :
                   the_post();
-                  // the_title();
-                  // the_content();
-                  // the_post_thumbnail('thumbnail'); ?>
-                  <!-- // get_template_part('template-parts/post/content', 'excerpt'); -->
+                   ?>
               <div class="p-archive-item-1">
               <?php the_post_thumbnail('thumbnail', ['class' => 'img-item-1']); ?>
               <div class="archive-container">
@@ -68,11 +65,12 @@
             <li> >></li>
           </ul>
         </div> -->
-        <div class="archive-pagination">
+        <?php wp_pagenavi(); ?>
+        <!-- <div class="archive-pagination">
         <ul>
-          <li><?php wp_pagenavi(); ?></li>
+          <li></li>
         </ul>
-      </div>
+      </div> -->
       </main>
 
     </div>

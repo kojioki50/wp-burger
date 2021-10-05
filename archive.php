@@ -8,20 +8,10 @@
         <div class="archive-img-mask"></div>
 
       <div class="p-archive-section">
-        <h2>小見出しが入ります</h2>
+        <h2>人気のメニュー</h2>
         <div class="archive-section-text">
-          <p>テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。
+          <p>メニュ一覧となっております。こちらでは当該メニューの概要をご覧になることができます。<br>さらに個々のメニューの情報をご覧になりたい場合は
+            それぞれの右下の詳しく見るをクリックして下さい。
           </p>
         </div>
       </div>
@@ -30,12 +20,9 @@
               if (have_posts()) :
                 while (have_posts()) :
                   the_post();
-                  // the_title();
-                  // the_content();
-                  // the_post_thumbnail('thumbnail'); ?>
-                  <!-- // get_template_part('template-parts/post/content', 'excerpt'); -->
+                 ?>
               <div class="p-archive-item-1">
-              <?php the_post_thumbnail('thumbnail', ['class' => 'img-item-1']); ?>
+              <?php the_post_thumbnail('medium', ['class' => 'img-item-1']); ?>
               <div class="archive-container">
               <h3><?php the_title(); ?></h3>
               <p><?php the_content(); ?></p>
@@ -70,12 +57,13 @@
             <li> >></li>
           </ul>
         </div> -->
-        <div class="archive-pagination">
+        <?php wp_pagenavi(); ?>
+        <!-- <div class="archive-pagination">
         <ul>
-          <li><?php wp_pagenavi(); ?></li>
+          <li></li>
         </ul>
       </div>
-      </main>
+      </main> -->
 
     </div>
  <?php get_sidebar(); ?>
