@@ -1,27 +1,16 @@
 <?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package WordPress
- * @subpackage wp-humberger
- * @since wp-humberger 1.0
- */
 
 get_header();
-?>
 
+	?>
+<div class="split-burger" >
+	<h1><?php echo esc_html( 'Nothing here', 'wp-humberger' ); ?></h1>
+	<p><?php echo esc_html( 'お探しのページが見つかりませんでした。お探しのページは削除または移動した可能性があります。', 'wp-humberger' ); ?></p>
 	
-		<h1 class="page-title"><?php esc_html_e( 'Nothing here', 'wp-humberger' ); ?></h1>
-
-	<div>
-		<div>
-			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'wp-humberger' ); ?></p>
-			<?php get_search_form(); ?>
-		</div><!-- .page-content -->
-	</div><!-- .error-404 -->
-
+	
+</div>
+</div>
+</div>
 <?php
 get_sidebar();
 get_footer();

@@ -60,7 +60,7 @@
   object-fit: cover;
   object-position: 0 50%;
 
-}
+
 
 
 
@@ -74,13 +74,13 @@ right:0;
 bottom:0;
 left:0;
 background-color: rgba(0,0,0,.3);
-
 }
-
-h1{
+.p-archive-img-text{
   position: absolute;
   z-index:1;
   color:#ccc;
+h1{
+  
   line-height: 1.2;
   font-size: 36px;
 
@@ -89,6 +89,9 @@ h1{
     font-size: 16px;
   }
 }
+}
+}
+
 
 .p-single-img{
   height: 250px;
@@ -153,4 +156,38 @@ h1{
 }
 }
 
+.error-page-h1
+{
 
+ padding:400px 0;
+}
+
+.error-page-p{
+
+  padding:400px 0;
+}
+
+.split-burger{
+  background: url("../image/404page.jpg");
+  height: 100%;
+  width:100%;
+  background-size: cover;
+  object-fit: cover;
+  @media (min-width: 1201px) {
+  background: url("../image/404page-pc.jpg");
+   background-size: cover;
+  }
+  
+  h1{
+    color:#ccc;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  p{
+    color:#ccc;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 1400px;
+  }
+}

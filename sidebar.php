@@ -1,3 +1,4 @@
+
 <div class="l-sidebar">
   <h2>Menu</h2>
   <?php

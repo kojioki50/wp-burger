@@ -18,12 +18,23 @@
 
 .wp-pagenavi{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top:62px;
-    padding-bottom: 31px;
+    font-family: "Roboto",sans-serif;
+    color:#707070;
+    text-decoration: none;
+    height: auto;
+    width:auto;
+    @include breakpoint( sp ){
+      justify-content: space-between;
+      margin-right: 20px;
+      margin-left: 20px;
+  }
+
+
   @include breakpoint( tablet ){
     margin-top:106px;
-    padding-bottom: 30px;
+   padding-bottom: 30px;
   }
 
   @include breakpoint( pc ){
@@ -31,95 +42,92 @@
     padding-bottom: 64px;
   }
 
-  & a{
-  display:block;
-  text-decoration: none;
-  color:#333;
+
+  .pages{
+    padding-right:20px;
+     line-height: 35px;
+      @include breakpoint( sp ){
+      display: none;
+     }
+  }
+
+  a.previouspostslink{
+    display: none;
+    line-height: 35px;
+    color:#707070;
+     @include breakpoint( sp ){
+      display: block;
+     }
+  }
+
+  span.current{
+    color:#ddd;
+    background-color: #707070;
+    border: 1px solid;
+    line-height: 35px;
+    padding: 0 11.5px;
+     @include breakpoint( sp ){
+      display: none;
+     }
+  }
+
+  a.page.larger{
+    cursor: pointer;
+    border: 1px solid;
+    line-height: 35px;
+    padding: 0 11.5px;
+    margin-left:15px;
+    text-decoration: none;
+    color:#707070;
+    @include breakpoint( sp ){
+      display: none;
+     }
+     &:hover{
+      opacity:.5;
+     }
+  }
+
+  a.page.smaller{
+    cursor: pointer;
+    border: 1px solid;
+    line-height: 35px;
+    padding: 0 11.5px;
+    margin-right:15px;
+    text-decoration: none;
+    color:#707070;
+    @include breakpoint( sp ){
+      display: none;
+    }
+     &:hover{
+      opacity:.5;
+     }
+  }
+
+  a.nextpostslink{
+    display:none;
+    line-height: 35px;
+    color:#707070;
+     @include breakpoint( sp ){
+      display: block;
+     }
+  }
+
+  span.extend
+  {
+    text-decoration: none;
+    margin-right: 17px;
+    margin-left: 17px;
+    line-height: 35px;
+    color:#707070;
+  }
+  
+  a.last{
+    text-decoration: none;
+    margin-left: 17px;
+    line-height: 35px;
+    color:#707070;
+  }
+
+
 }
-
-}
-//   width:335px;
-  
-//   ul{
-//     display: flex;
-//     justify-content: space-between;
-    
-//     li{
-//       list-style: none;
-//     }
-//   }
-// }
-// .archive-pagination{
-//   display: none;
-// }
-
-// @include breakpoint( tablet ){
-// .archive-pagination{
-//   width:700px;
-//   height: 200px;
-//   margin:0 auto;
-//   display: block;
-//   padding-top: 120px;
-
-//   ul{
-//     display: flex;
-//     justify-content: space-between;
-//   }
-  
-//     li{
-//       list-style: none;
-//       padding:6px 12px;
-//     }
-//      li:nth-child(3){
-//        background-color: #333;
-//        color:#fff;
-//      }
-//     li:nth-child(n+3):nth-child(-n+11){
-//       border: 1px solid #333;
-//       margin-left: 8px;
-      
-//     }
-//   }
-// .archive-pagination-pc{
-//   display: none;
-// }
-
-//    }
-// @include breakpoint( pc ){
-// .archive-pagination{
-//   width:700px;
-//   height: 200px;
-//   margin:0 auto;
-//   display: block;
-//   padding-top: 120px;
-
-//   ul{
-//     display: flex;
-//     justify-content: space-between;
-//   }
-  
-//     li{
-//       list-style: none;
-//       padding:6px 12px;
-//     }
-//      li:nth-child(3){
-//        background-color: #333;
-//        color:#fff;
-//      }
-//     li:nth-child(n+3):nth-child(-n+11){
-//       border: 1px solid #333;
-//       margin-left: 8px;
-      
-//     }
-//   }
-
-// .archive-pagination-pc{
-//   display: none;
-// }
-
-//    }
-
-
-
-  
 

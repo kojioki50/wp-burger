@@ -28,6 +28,10 @@
        pointer-events: none;
        @include breakpoint( tablet ){
         width:55%;
+       
+       }
+       @include breakpoint( pc ){
+        display: none;
        }
      }
 
@@ -43,6 +47,7 @@
      display: none;
   @include breakpoint( tablet ){
      width:45%;
+    
   }
   @include breakpoint( pc ){
      height:100%;
