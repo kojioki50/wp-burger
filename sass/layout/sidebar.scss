@@ -96,9 +96,9 @@
       
      }
      }
-  
+}
 
-  ul{
+  .burger-ul{
     list-style: none;
     
     li{
@@ -107,9 +107,12 @@
       padding-bottom: 10px;
       padding-left: 65px;
     }
+    a{
+       text-decoration: none;
+       color: #707070;
+    }
   }
 
-}
 
  .l-sidebar.active {
    transform: translateX(0px);

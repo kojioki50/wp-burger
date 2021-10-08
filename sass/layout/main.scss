@@ -168,13 +168,13 @@ h1{
 }
 
 .split-burger{
-  background: url("../image/404page.jpg");
+  background: url("../image/404page.jpg") center center;
   height: 100%;
   width:100%;
   background-size: cover;
   object-fit: cover;
   @media (min-width: 1201px) {
-  background: url("../image/404page-pc.jpg");
+  background: url("../image/404page-pc.jpg") center center;
    background-size: cover;
   }
   

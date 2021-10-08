@@ -86,4 +86,14 @@ function post_has_archive($args, $post_type)
   }
   return $args;
 }
+function add_menus() {
+  register_nav_menus(array(
+    'burger' => 'バーガー',
+    'side' => 'サイド',
+    'drink' => 'ドリンク',
+    'shop-information' => 'ショップ情報'
+  ));
+}
+add_action('after_setup_theme', 'add_menus');
+
 add_filter('register_post_type_args', 'post_has_archive' ,10,2);

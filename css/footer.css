@@ -12,6 +12,15 @@
   padding-top: 40px;
   color: #fff;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.l-footer h4 ul {
+  list-style: none;
 }
 .l-footer h4 a {
   text-decoration: none;

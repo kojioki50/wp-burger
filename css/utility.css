@@ -93,20 +93,32 @@
     padding-left: 100px;
   }
 }
-.p-archive-item-1 h3,
+.p-archive-item-1 h1, .p-archive-item-1 h2, .p-archive-item-1 h3, .p-archive-item-1 h4, .p-archive-item-1 h5, .p-archive-item-1 h6,
+.p-archive-item-2 h1,
+.p-archive-item-2 h2,
 .p-archive-item-2 h3,
-.p-archive-item-3 h3,
-.p-archive-item-4 h3,
-.p-archive-item-5 h3 {
-  margin-bottom: 24px;
-  margin-left: 17px;
-  padding-top: 20px;
-}
-.p-archive-item-1 h4,
 .p-archive-item-2 h4,
+.p-archive-item-2 h5,
+.p-archive-item-2 h6,
+.p-archive-item-3 h1,
+.p-archive-item-3 h2,
+.p-archive-item-3 h3,
 .p-archive-item-3 h4,
+.p-archive-item-3 h5,
+.p-archive-item-3 h6,
+.p-archive-item-4 h1,
+.p-archive-item-4 h2,
+.p-archive-item-4 h3,
 .p-archive-item-4 h4,
-.p-archive-item-5 h4 {
+.p-archive-item-4 h5,
+.p-archive-item-4 h6,
+.p-archive-item-5 h1,
+.p-archive-item-5 h2,
+.p-archive-item-5 h3,
+.p-archive-item-5 h4,
+.p-archive-item-5 h5,
+.p-archive-item-5 h6 {
+  padding-right: 60px;
   margin-bottom: 10px;
   margin-left: 17px;
 }
@@ -125,26 +137,7 @@
 .p-archive-item-4 button,
 .p-archive-item-5 button {
   display: block;
-  margin-bottom: 15px;
   padding: 10px 40px;
-}
-@media (min-width: 751px) and (max-width: 1200px) {
-  .p-archive-item-1 button,
-.p-archive-item-2 button,
-.p-archive-item-3 button,
-.p-archive-item-4 button,
-.p-archive-item-5 button {
-    margin: 40px auto 0;
-  }
-}
-@media (min-width: 1201px) {
-  .p-archive-item-1 button,
-.p-archive-item-2 button,
-.p-archive-item-3 button,
-.p-archive-item-4 button,
-.p-archive-item-5 button {
-    margin: 40px auto 0;
-  }
 }
 
 .archive-pagination-pc {
@@ -238,8 +231,7 @@ table {
 table td {
   padding: 30px;
 }
-
-button {
+table button {
   margin-bottom: 30px;
 }
 /*# sourceMappingURL=utility.css.map */

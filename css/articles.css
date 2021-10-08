@@ -224,7 +224,7 @@
 .p-archive-item-3,
 .p-archive-item-4,
 .p-archive-item-5 {
-    height: 350px;
+    height: 470px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -242,6 +242,8 @@
   height: 40%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
   .img-item-1,
@@ -249,8 +251,6 @@
 .img-item-3,
 .img-item-4,
 .img-item-5 {
-    -o-object-position: 0 50%;
-       object-position: 0 50%;
     height: 100%;
     width: 50%;
   }
@@ -261,8 +261,6 @@
 .img-item-3,
 .img-item-4,
 .img-item-5 {
-    -o-object-position: 0 50%;
-       object-position: 0 50%;
     height: 100%;
     width: 50%;
   }
@@ -389,6 +387,7 @@
   width: 100%;
   padding-bottom: 60px;
   position: relative;
+  padding-top: 20px;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
   .archive-container {
@@ -398,8 +397,17 @@
 }
 @media (min-width: 1201px) {
   .archive-container {
+    padding-top: 53px;
     height: 100%;
     width: 50%;
+  }
+}
+.archive-container .content {
+  margin-top: 24px;
+}
+@media (min-width: 1201px) {
+  .archive-container .content {
+    margin-top: 47px;
   }
 }
 .archive-container h3 {
@@ -417,7 +425,17 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   left: 50%;
-  bottom: 30px;
+  bottom: 43px;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .archive-container button {
+    bottom: 40px;
+  }
+}
+@media (min-width: 1201px) {
+  .archive-container button {
+    bottom: 60px;
+  }
 }
 
 blockquote {

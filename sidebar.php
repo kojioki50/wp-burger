@@ -13,15 +13,16 @@
             ?>
             <a href ="<?php echo esc_url($cat_link);?>">バーガー</a>
         </h3>
-        <ul>
-          <li>ハンバーガー</li>
-          <li>チーズバーガー</li>
-          <li>テリヤキバーガー</li>
-          <li>アボガドバーガー</li>
-          <li>フィッシュバーガー</li>
-          <li>ベーコンバーガー</li>
-          <li>チキンバーガー</li>
-        </ul>
+
+          <?php
+          $args = array(
+            'theme_location' => 'burger',
+            'container' => 'div',
+            'menu_class' => 'burger-ul'
+          );
+          wp_nav_menu($args);
+          ?>
+
         <?php endif; ?>
         <?php
       if ( is_active_sidebar('side_widget')):
@@ -36,12 +37,14 @@
             ?>
             <a href ="<?php echo esc_url($cat_link);?>">サイド</a>
         </h3>
-        <ul>
-          <li>ポテト</li>
-          <li>サラダ</li>
-          <li>ナゲット</li>
-          <li>コーン</li>
-        </ul>
+        <?php
+          $args = array(
+            'theme_location' => 'side',
+            'container' => 'div',
+            'menu_class' => 'burger-ul'
+          );
+          wp_nav_menu($args);
+          ?>
   <?php endif; ?>
   <?php
       if ( is_active_sidebar('drink_widget')):
@@ -56,14 +59,14 @@
             ?>
             <a href ="<?php echo esc_url($cat_link);?>">ドリンク</a>
         </h3>
-      <ul>
-        <li>コーラ</li>
-        <li>ファンタ</li>
-        <li>オレンジ</li>
-        <li>アップル</li>
-        <li>紅茶 (Ice/Hot)</li>
-        <li>コーヒー (Ice/Hot)</li>
-      </ul>
+      <?php
+          $args = array(
+            'theme_location' => 'drink',
+            'container' => 'div',
+            'menu_class' => 'burger-ul'
+          );
+          wp_nav_menu($args);
+          ?>
       
     </div>
     <span class="l-sidebar-mask"></span>

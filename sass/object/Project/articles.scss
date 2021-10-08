@@ -218,7 +218,7 @@
 
 }
   @include breakpoint( pc ){
-  height: 350px;
+  height: 470px;
   width:100%;
   display: flex;
 
@@ -226,24 +226,43 @@
 }
 }
 
+// .archive-loop-img{
+//    vertical-align: bottom;
+//   width:100%;
+//   height: 40%;
+//   object-fit:cover;
+//   @include breakpoint( tablet ){
+//     object-position: 0 50%;
+//     height:100%;
+//     width:50%;
+
+// }
+//   @include breakpoint( pc ){
+//     object-position: 0 50%;
+//     height:100%;
+//     width:50%;
+
+// }
+// }
+
 .img-item-1,
 .img-item-2,
 .img-item-3,
 .img-item-4,
 .img-item-5
 {
+
   vertical-align: bottom;
   width:100%;
   height: 40%;
   object-fit:cover;
+  object-position: 50% 50%;
   @include breakpoint( tablet ){
-    object-position: 0 50%;
     height:100%;
     width:50%;
 
 }
   @include breakpoint( pc ){
-    object-position: 0 50%;
     height:100%;
     width:50%;
 
@@ -372,6 +391,7 @@
   width:100%;
   padding-bottom: 60px;
   position: relative;
+  padding-top: 20px;
   @include breakpoint( tablet ){
 
   height:100%;
@@ -379,10 +399,16 @@
 
 }
   @include breakpoint( pc ){
-
+  padding-top: 53px;
   height:100%;
   width:50%;
 
+}
+.content{
+  margin-top:24px;
+  @include breakpoint( pc ){
+  margin-top: 47px;
+}
 }
   h3{
     color: #fff;
@@ -390,7 +416,6 @@
 
         p{
           color: #fff;
-
 }
 
 button{
@@ -401,7 +426,17 @@ button{
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  bottom: 30px;
+  bottom: 43px;
+  @include breakpoint( tablet ){
+
+  bottom: 40px;
+
+}
+  @include breakpoint( pc ){
+  bottom: 60px;
+ 
+
+}
 }
 }
 

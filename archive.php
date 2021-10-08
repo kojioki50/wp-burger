@@ -24,10 +24,14 @@
                   the_post();
                  ?>
               <div class="p-archive-item-1">
-              <?php the_post_thumbnail('medium', ['class' => 'img-item-1']); ?>
+              <!-- <div class="archive-loop-img"> -->
+                <?php the_post_thumbnail('medium', ['class' => 'img-item-1']); ?>
+              <!-- </div> -->
               <div class="archive-container">
               <h3><?php the_title(); ?></h3>
-              <p><?php the_content(); ?></p>
+              <div class="content">
+                <?php the_content(); ?>
+              </div>
               <button type="button" name="detail">詳しく見る</button>
           </div>
         </div>
