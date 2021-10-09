@@ -4,7 +4,7 @@
 <main class="archive-main">
   <div class="p-archive-img">
     <div class="p-archive-img-text">
-      <h1>Search:<br><span><?php the_title(); ?></span></h1>
+      <h1>Search:<span><?php the_title(); ?></span></h1>
     </div>
     <div class="archive-img-mask"></div>
   </div>
@@ -27,15 +27,15 @@
                   the_post();
                    ?>
               <div class="p-archive-item-1">
-               <div class="archive-loop-img">
+               <!-- <div class="archive-loop-img"> -->
                 <?php the_post_thumbnail('medium', ['class' => 'img-item-1']); ?>
-              </div>
+              <!-- </div> -->
               <div class="archive-container">
               <h3><?php the_title(); ?></h3>
               <div class="content">
                 <?php the_content(); ?>
               </div>
-              <button type="button" name="detail">詳しく見る</button>
+              <a href="<?php the_permalink(); ?>">詳しく見る</a>
           </div>
         </div>
                 <?php endwhile;

@@ -3,7 +3,7 @@
     <main class="archive-main">
       <div class="p-archive-img">
         <div class="p-archive-img-text">
-         <h1>Menu:<br><span><?php $category = get_the_category(); echo $category[0]->cat_name;?></span></h1>
+         <h1>Menu:<span><?php $category = get_the_category(); echo $category[0]->cat_name;?></span></h1>
         </div>
         <div class="archive-img-mask"></div>
       </div>
@@ -32,7 +32,8 @@
               <div class="content">
                 <?php the_content(); ?>
               </div>
-              <button type="button" name="detail">詳しく見る</button>
+              <a href="<?php the_permalink(); ?>">詳しく見る</a>
+               
           </div>
         </div>
                 <?php endwhile;

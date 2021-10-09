@@ -335,7 +335,7 @@
  
   h2
   {
-    font-size:30px;
+    font-size:28px;
     color:#fff;
     padding-bottom: 40px;
     @include breakpoint( pc ){
@@ -389,13 +389,15 @@
   color:#fff;
   height:60%;
   width:100%;
-  padding-bottom: 60px;
+  padding-bottom: 43.7px;
   position: relative;
-  padding-top: 20px;
+  padding-top: 31.5px;
   @include breakpoint( tablet ){
 
   height:100%;
   width:50%;
+  padding-bottom: 40px;
+  padding-top: 30px;
 
 }
   @include breakpoint( pc ){
@@ -412,21 +414,30 @@
 }
   h3{
     color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    @include breakpoint( pc ){
+    font-size: 36px;
+    line-height: 36px;
+}
   }
 
         p{
           color: #fff;
 }
 
-button{
+a{
   display: inline-block;
   background-color:#fff;
   color:#707070;
-  border-radius:20px;
+  border-radius:50px;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
   bottom: 43px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
   @include breakpoint( tablet ){
 
   bottom: 40px;
@@ -434,6 +445,7 @@ button{
 }
   @include breakpoint( pc ){
   bottom: 60px;
+  white-space: nowrap;
  
 
 }

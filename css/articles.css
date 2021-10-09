@@ -336,7 +336,7 @@
   }
 }
 .p-modal h2 {
-  font-size: 30px;
+  font-size: 28px;
   color: #fff;
   padding-bottom: 40px;
 }
@@ -385,14 +385,16 @@
   color: #fff;
   height: 60%;
   width: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 43.7px;
   position: relative;
-  padding-top: 20px;
+  padding-top: 31.5px;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
   .archive-container {
     height: 100%;
     width: 50%;
+    padding-bottom: 40px;
+    padding-top: 30px;
   }
 }
 @media (min-width: 1201px) {
@@ -412,29 +414,41 @@
 }
 .archive-container h3 {
   color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+}
+@media (min-width: 1201px) {
+  .archive-container h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 .archive-container p {
   color: #fff;
 }
-.archive-container button {
+.archive-container a {
   display: inline-block;
   background-color: #fff;
   color: #707070;
-  border-radius: 20px;
+  border-radius: 50px;
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   left: 50%;
   bottom: 43px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
-  .archive-container button {
+  .archive-container a {
     bottom: 40px;
   }
 }
 @media (min-width: 1201px) {
-  .archive-container button {
+  .archive-container a {
     bottom: 60px;
+    white-space: nowrap;
   }
 }
 

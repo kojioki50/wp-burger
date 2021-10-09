@@ -52,21 +52,23 @@
 
 
 .p-archive-img{
-  height: 280px;
+  height: 283px;
   width: auto;
   background: url("../image/p-archive-img@2x.jpg") no-repeat left center;
   position: relative;
   background-size: cover;
   object-fit: cover;
-  object-position: 0 50%;
-
+  @include breakpoint( pc ){
+    height: 239px;
+  }
+  
 
 
 
 
 .archive-img-mask{
 content: "";
-height: 280px;
+height: 283px;
 width:auto;
 position:absolute;
 top: 0;
@@ -74,19 +76,32 @@ right:0;
 bottom:0;
 left:0;
 background-color: rgba(0,0,0,.3);
+@include breakpoint( pc ){
+    height: 239px;
+  }
 }
 .p-archive-img-text{
   position: absolute;
   z-index:1;
   color:#ccc;
+
+
+
 h1{
-  
-  line-height: 1.2;
-  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  @include breakpoint( sp ){
+     font-size: 36px;
+  }
 
   span{
-
+    vertical-align: middle;
+    padding-left: 20px;
     font-size: 16px;
+    @include breakpoint( sp ){
+       padding-left: 0;
+       padding-top: 7px;
+    }
   }
 }
 }

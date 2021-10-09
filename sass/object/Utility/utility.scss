@@ -17,11 +17,30 @@
 }
 
 .p-archive-img{
-
-  h1{
-    margin-left:37px;
+.p-archive-img-text
+  { display: flex;
+    padding-left:37px;
     padding-top: 102px;
+  
+  @include breakpoint( tablet ){
+    padding-left:86px;
+    padding-top: 102px;
+ }
+ @include breakpoint( pc ){
+    padding-left:86px;
+    padding-top: 80px;
+ }
+ @include breakpoint( sp ){
+  
+    display: block;
   }
+ }
+ 
+  span{
+    @include breakpoint( sp ){
+    display: block;
+  }
+ }
 }
 
 .p-archive-section{
@@ -122,9 +141,15 @@ p{
   padding-right: 60px;
 }
 
-button{
+a{
  display: block;
- padding: 10px 40px;
+
+     padding: 9px 40px;
+
+   @include breakpoint( pc ){
+     padding: 26px 106px;
+  }
+ 
  
 
 }
