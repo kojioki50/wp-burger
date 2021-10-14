@@ -34,6 +34,7 @@ wp_enqueue_style( 'pagination', get_template_directory_uri() . '/css/pagination.
 wp_enqueue_style( 'utility', get_template_directory_uri() . '/css/utility.css', array(), '1.0' );
 
 wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0');
+
 }
 add_action('wp_enqueue_scripts', 'burger_script');
 
@@ -92,9 +93,33 @@ function add_menus() {
     'burger' => 'バーガー',
     'side' => 'サイド',
     'drink' => 'ドリンク',
-    'shop-information' => 'ショップ情報'
+    'shop-information' => 'ショップ情報',
+    
   ));
 }
 add_action('after_setup_theme', 'add_menus');
 
 add_filter('register_post_type_args', 'post_has_archive' ,10,2);
+
+add_action('init', function(){
+  register_post_type('eat-in',[
+    'label' => 'イートイン',
+    'public' => true,
+    'menu_icon' => 'dashicons-food',
+    'supports'  => ['thumbnail', 'title', 'editor','custom-fields'],
+    'has_archive' => true
+    ]);
+
+register_taxonomy('genre','eat-in',[
+    'label' => '商品ジャンル',
+    'hierarchical' => true,
+
+]);
+});
+
+add_filter( 'post_thumbnail_html', 'custom_attribute' );
+function custom_attribute( $html ){
+    // width height を削除する
+    $html = preg_replace('/(width|height)="\d*"\s/', '', $html);
+    return $html;
+}

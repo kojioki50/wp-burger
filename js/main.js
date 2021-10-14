@@ -6,6 +6,7 @@ jQuery(function(){
     jQuery(".l-sidebar-mask").toggleClass('active');
     jQuery(".l-main-area").toggleClass('active');
 
+    
   });
 
 });

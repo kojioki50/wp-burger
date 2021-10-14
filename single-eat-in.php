@@ -12,21 +12,23 @@ the_post();
 </div>
 <div class="p-single-content">
   <?php the_content(); ?>
+  
+  <?php $terms = get_the_terms(get_the_ID(), 'genre'); ?>
+    <?php if ($terms): ?>
+      <ul>
+        <?php foreach ($terms as $term): ?>
+          <li><a href="<?php echo get_term_link($term); ?>"><?php echo esc_html($term->name);?></a><li>
+            <?php endforeach; ?>
+            <?php endif; ?>
+      </ul>
+    <?php get_template_part('template-parts/content',get_post_type());?>
   <?php endwhile;?>
   <?php else : ?>
     <?php endif; ?>
-    <h3>見出しh3</h3>
-    <h4>見出しh4</h4>
-    <h4>見出しh5</h4>
-    <h4>見出しh6</h4>
     
-    <blockquote>
-      <p>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</p>
-      <p>出典元 :<a>◯◯◯◯◯◯◯◯◯◯◯◯◯◯</a></p>
-    </blockquote>
-    <div class="p-singlemain1-img"></div>
     
-    <div class="single-container-box">
+    
+    <!-- <div class="single-container-box">
       <div class="single-container">
         <div class="p-singlemain2-img"></div>
         <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
@@ -35,42 +37,9 @@ the_post();
         <div class="p-singlemain2-img"></div>
         <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
       </div>
-    </div>
+    </div> -->
     
-    <h2>こちらもいかがでしょうか？</h2>
-    <section class="cover-imgs">
-      <?php
-      $args = array(
-        'post_type' =>'post',
-        // 'category_name' => 'バーガー',
-        'posts_per_page' => 6,
-        'orderby' => 'rand'
-      );
-      $new_query = new WP_Query($args);
-      if($new_query->have_posts()): while($new_query->have_posts()):
-        $new_query->the_post();
-      ?>
-
-
-      <div class="p-singlemaincover">
-      <a href="<?php the_permalink();?>">
-        <?php the_post_thumbnail(); ?>
-      </a>
-      </div>
-       
-
-        <?php endwhile;
-        wp_reset_postdata();
-      else: ?>
-
-        <h3>投稿はありません。</h3>
-        <?php endif; ?>
-       
-     </section>
-
-
-
-    <!-- <div class="p-singlemain3-img"></div>
+    <div class="p-singlemain3-img"></div>
     <div class="cover-imgs">
       <div class="p-singlemaincover-img"></div>
       <div class="p-singlemaincover-img"></div>
@@ -81,7 +50,7 @@ the_post();
       <div class="p-singlemaincover-img"></div>
       <div class="p-singlemaincover-img"></div>
       <div class="p-singlemaincover-img"></div>
-    </div> -->
+    </div>
     <div class="single-list">
       <ol>
         <li>リストリストリスト</li>

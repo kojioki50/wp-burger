@@ -1,10 +1,14 @@
 <?php get_header(); ?>
 
       <main>
-
-        <div class="p-top-img">
-          <h1>KOJI'S HUMBERGER SHOP</h1>
-        </div>
+        <ul class="your-class">
+         <li> <img class="p-top-img" src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/hamburger-slick.jpg"></li>
+         <li><img class="p-top-img" src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/humberg-slick.jpg"></li>
+         <li><img class="p-top-img" src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/buns-slick.jpg"></li>
+       </ul>
+        
+          <!-- <h1>KOJI'S HUMBERGER SHOP</h1> -->
+        
 
         <div class="p-imgs">
           <div class="each-img-left">
@@ -22,7 +26,7 @@
             </a>
           </div>
           <div class="each-img-right">
-            <a href="<?php echo esc_url( home_url('/page') ); ?>">
+            <a href="<?php echo esc_url( home_url('/eat-in') ); ?>">
               <h2>Eat In</h2>
               <div class="container">
                 <div class="item-1">

@@ -9,9 +9,11 @@
         <h3><?php
             $cat = get_category_by_slug('バーガー');
             $cat_id = $cat->term_id;
-            $cat_link = get_category_link($cat_id);
-            ?>
+            $cat_link = get_category_link($cat_id);?>
             <a href ="<?php echo esc_url($cat_link);?>">バーガー</a>
+
+                
+
         </h3>
 
           <?php
@@ -30,12 +32,20 @@
       else:
         ?>
   
-         <h3><?php
-            $cat = get_category_by_slug('サイド');
-            $cat_id = $cat->term_id;
+  <h3>
+            <?php $cat = get_category_by_slug('サイド');?>
+            <?php if($cat): ?>
+            
+            <?php $cat_id = $cat->term_id;
             $cat_link = get_category_link($cat_id);
             ?>
             <a href ="<?php echo esc_url($cat_link);?>">サイド</a>
+            <?php else: ?>
+            <?php echo esc_attr('「スラッグにサイドが入っていません」');?>
+            <?php endif; ?>
+        </h3>
+
+         
         </h3>
         <?php
           $args = array(

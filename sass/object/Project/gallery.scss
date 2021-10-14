@@ -65,10 +65,48 @@
    @include breakpoint( pc ){
     height:300px;
   }
-}
+
 p{
   width:100%;
 }
+ }
+
+
+.single-container .p-single-eat-in-2-img{
+  height:150px;
+  width:100%;
+  background-size: cover;
+  object-fit: contain;
+  object-position: bottom;
+  @include breakpoint( tablet ){
+    
+    height:190px;
+  }
+   @include breakpoint( pc ){
+    height:300px;
+  }
+}
+
+ .single-container:last-child .p-single-eat-in-2-img{
+  height:150px;
+  width:100%;
+  background-size: cover;
+  object-fit: contain;
+  object-position: bottom;
+  @include breakpoint( tablet ){
+    
+    height:190px;
+  }
+   @include breakpoint( pc ){
+    height:300px;
+  }
+
+p{
+  width:100%;
+}
+ }
+
+
 
 .p-singlemain3-img{
   height:165px;

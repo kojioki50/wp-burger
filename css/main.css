@@ -1,27 +1,35 @@
-.p-top-img {
-  background: url("../image/mainvisual-sp@2x.jpg") no-repeat center center;
+.your-class .p-top-img {
   background-size: cover;
-  height: 375px;
+  height: 285px;
   width: 100%;
+  -o-object-position: cover;
+     object-position: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 1201px) {
-  .p-top-img {
-    background: url("../image/mainvisual-pc@2x.jpg") no-repeat center center;
-    background-size: cover;
-    width: auto;
+  .your-class .p-top-img {
+    width: 100%;
+    height: 530px;
     overflow: hidden;
   }
 }
-.p-top-img h1 {
-  color: white;
+.your-class .p-top-img h1 {
+  position: absolute;
+  color: #333;
   padding-top: 170px;
   margin-left: 85px;
   font-size: 36px;
 }
 @media (max-width: 750px) {
-  .p-top-img h1 {
+  .your-class .p-top-img h1 {
     margin-left: 35px;
   }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #333;
 }
 
 .archive-main {
@@ -94,38 +102,60 @@
   }
 }
 
-.p-single-img {
-  height: 250px;
-  width: auto;
-  background: url("../image/cheeseburger3@2x.png") no-repeat center center;
+.single-main-top {
   position: relative;
-  background-size: cover;
+  width: 100%;
+  height: 224px;
 }
-.p-single-img h1 {
+@media (min-width: 751px) and (max-width: 1200px) {
+  .single-main-top {
+    height: 500px;
+  }
+}
+@media (min-width: 1201px) {
+  .single-main-top {
+    height: 500px;
+  }
+}
+.single-main-top .p-single-img {
+  height: 224px;
+  width: 100%;
+  background: url("../image/cheeseburger3@2x.png") no-repeat center center;
+  position: absolute;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .single-main-top .p-single-img {
+    height: 500px;
+  }
+}
+@media (min-width: 1201px) {
+  .single-main-top .p-single-img {
+    height: 500px;
+  }
+}
+.single-main-top h1 {
   position: absolute;
   top: 45%;
   left: 0;
   padding-left: 20px;
+  z-index: 1000;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
-  .p-single-img {
-    height: 500px;
-  }
-  .p-single-img h1 {
+  .single-main-top h1 {
     padding-left: 50px;
   }
 }
 @media (min-width: 1201px) {
-  .p-single-img {
-    height: 500px;
-  }
-  .p-single-img h1 {
+  .single-main-top h1 {
     padding-left: 100px;
   }
 }
 
 .p-page-img {
-  height: 250px;
+  height: 224px;
   width: auto;
   background: url("../image/page-title_shop@2x.jpg") no-repeat center center;
   position: relative;

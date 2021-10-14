@@ -10,6 +10,8 @@
     </h4>
     <p>&copy;  <?php bloginfo('name'); ?> 2021</p>
 </footer>
+<script src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/slick/slick-config.js"></script>
 </body>
 <?php wp_footer(); ?>
 

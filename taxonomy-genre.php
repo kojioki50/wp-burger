@@ -2,17 +2,27 @@
 
     <main class="archive-main">
       <div class="p-archive-img">
-        <div class="p-archive-img-text">
-         <h1>Menu:<span><?php $category = get_the_category(); echo $category[0]->cat_name;?></span></h1>
-        </div>
+      <div class="p-archive-img-text">
+        <h1>EAT-IN </h1>
+      </div>
+
         <div class="archive-img-mask"></div>
       </div>
 
 
       <div class="p-archive-section">
-        <h2>人気のメニュー</h2>
+        <h2>イートインメニュー</h2>
+        <?php $terms = get_terms('genre'); ?>
+        <?php if ($terms): ?>
+        <ul>
+          <?php foreach ($terms as $term): ?>
+          <li> <a href="<?php echo get_term_link($term)?>"> <?php echo esc_html($term->name);?></a></li>
+          <?php endforeach; ?>
+        </ul>
+          <?php endif; ?>
+        
         <div class="archive-section-text">
-          <p>メニュ一覧となっております。こちらでは当該メニューの概要をご覧になることができます。<br>さらに個々のメニューの情報をご覧になりたい場合は
+          <p>イートインメニュ一覧となっております。こちらでは当該メニューの概要をご覧になることができます。<br>さらに個々のメニューの情報をご覧になりたい場合は
             それぞれの右下の詳しく見るをクリックして下さい。
           </p>
         </div>
@@ -46,7 +56,7 @@
          <?php wp_pagenavi();?>
        
 
-    </div>
+  </div>
  <?php get_sidebar(); ?>
     </div>
 <?php get_footer(); ?>

@@ -32,8 +32,8 @@
               <!-- </div> -->
               <div class="archive-container">
               <h3><?php the_title(); ?></h3>
-              <div class="content">
-                <?php the_content(); ?>
+               <div class="excerpt">
+                <?php the_excerpt(); ?>
               </div>
               <a href="<?php the_permalink(); ?>">詳しく見る</a>
           </div>

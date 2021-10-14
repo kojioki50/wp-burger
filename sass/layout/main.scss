@@ -15,30 +15,64 @@
   }
 }
 }
-  
+
+
+
+.your-class{
   .p-top-img{
-    background: url("../image/mainvisual-sp@2x.jpg") no-repeat center center;
+    
     background-size: cover;
-    height:375px;
+    height:285px;
     width:100%;
+    object-position: cover;
+    object-fit: cover;
     @include breakpoint( pc ){
-    background: url("../image/mainvisual-pc@2x.jpg") no-repeat center center;
-    background-size:cover;
-    width:auto;
+    width:100%;
+    height: 530px;
     overflow: hidden;
   }
-   
-  
   h1{
-    color:white;
+    position: absolute;
+    color: #333;
     padding-top:170px;
     margin-left: 85px;
     font-size: 36px;
     @include breakpoint( sp ){
     margin-left:35px;
   }
-  }  
 }
+  }  
+  
+}
+.slick-prev:before,
+.slick-next:before{
+  color:#333;
+}
+
+//   .p-top-img{
+    
+//     background-size: cover;
+//     height:375px;
+//     width:100%;
+//     object-position: cover;
+//     object-fit: cover;
+//     @include breakpoint( pc ){
+//     background-size:cover;
+//     width:auto;
+//     overflow: hidden;
+//   }
+   
+  
+//   h1{
+//     color:white;
+//     padding-top:170px;
+//     margin-left: 85px;
+//     font-size: 36px;
+//     @include breakpoint( sp ){
+//     margin-left:35px;
+//   }
+//   }  
+// }
 
 .archive-main{
   position: relative;
@@ -107,40 +141,63 @@ h1{
 }
 }
 
+.single-main-top{
+  position:relative;
+  width:100%;
+  height: 224px;
+   @include breakpoint( tablet ){
+  
+    height: 500px;
+  }
 
+  @include breakpoint( pc ){
+ 
+    height: 500px;
+}
 .p-single-img{
-  height: 250px;
-  width: auto;
+  height: 224px;
+  width: 100%;
   background: url("../image/cheeseburger3@2x.png") no-repeat center center;
-  position: relative;
+  position: absolute;
   background-size: cover;
+  object-fit: cover;
+  
+  @include breakpoint( tablet ){
+  
+    height: 500px;
+  }
+
+  @include breakpoint( pc ){
+ 
+    height: 500px;
+}
+
+}
   h1{
     position: absolute;
     top: 45%;
     left: 0;
     padding-left: 20px;
-  }
- @include breakpoint( tablet ){
-  
-    height: 500px;
-  
-   h1 {
-    padding-left: 50px;
+    z-index:1000;
+    @include breakpoint( tablet ){
+   
+       
+       padding-left: 50px;
+     
+   
+   }
+   @include breakpoint( pc ){
+    
+      
+       padding-left: 100px;
+     }
   }
 
-}
-@include breakpoint( pc ){
- 
-    height: 500px;
-  
-   h1 {
-    padding-left: 100px;
-  }
-}
+
 }
 
 .p-page-img{
-  height: 250px;
+  height: 224px;
   width: auto;
   background: url("../image/page-title_shop@2x.jpg") no-repeat center center;
   position: relative;
