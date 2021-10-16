@@ -17,7 +17,7 @@ the_post();
     <?php if ($terms): ?>
       <ul>
         <?php foreach ($terms as $term): ?>
-          <li><a href="<?php echo get_term_link($term); ?>"><?php echo esc_html($term->name);?></a><li>
+          <li><a href="<?php echo get_term_link($term); ?>"><?php echo esc_html('Back to '. $term->name);?></a><li>
             <?php endforeach; ?>
             <?php endif; ?>
       </ul>
@@ -26,19 +26,7 @@ the_post();
   <?php else : ?>
     <?php endif; ?>
     
-    
-    
-    <!-- <div class="single-container-box">
-      <div class="single-container">
-        <div class="p-singlemain2-img"></div>
-        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-      </div>
-      <div class="single-container">
-        <div class="p-singlemain2-img"></div>
-        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-      </div>
-    </div> -->
-    
+
     <div class="p-singlemain3-img"></div>
     <div class="cover-imgs">
       <div class="p-singlemaincover-img"></div>

@@ -116,7 +116,7 @@ register_taxonomy('genre','eat-in',[
 
 ]);
 });
-
+//thumbnailの高さ、幅を消してwp-post-imgで自分でスタイリング。
 add_filter( 'post_thumbnail_html', 'custom_attribute' );
 function custom_attribute( $html ){
     // width height を削除する

@@ -42,7 +42,7 @@ the_post();
       <?php
       $args = array(
         'post_type' =>'post',
-        // 'category_name' => 'バーガー',
+        'post__not_in' => array($post -> ID),
         'posts_per_page' => 6,
         'orderby' => 'rand'
       );
@@ -68,20 +68,6 @@ the_post();
        
      </section>
 
-
-
-    <!-- <div class="p-singlemain3-img"></div>
-    <div class="cover-imgs">
-      <div class="p-singlemaincover-img"></div>
-      <div class="p-singlemaincover-img"></div>
-      <div class="p-singlemaincover-img"></div>
-      <div class="p-singlemaincover-img"></div>
-      <div class="p-singlemaincover-img"></div>
-      <div class="p-singlemaincover-img"></div>
-      <div class="p-singlemaincover-img"></div>
-      <div class="p-singlemaincover-img"></div>
-      <div class="p-singlemaincover-img"></div>
-    </div> -->
     <div class="single-list">
       <ol>
         <li>リストリストリスト</li>
