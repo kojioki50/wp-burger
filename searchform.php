@@ -1,5 +1,5 @@
 <div id="search-wrap">
-  <form role="search" method="get" action="<?php echo home_url('/'); ?>">
+  <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
     <label for="search-text"></label>
     <div class="use_icon">
       <input type="text" value="" name="s" id="search-text" class=input>

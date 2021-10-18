@@ -27,9 +27,11 @@
                   the_post();
                  ?>
               <div class="p-archive-item-1">
-              <!-- <div class="archive-loop-img"> -->
+               <?php if(has_post_thumbnail()):?>
                 <?php the_post_thumbnail('medium', ['class' => 'img-item-1']); ?>
-              <!-- </div> -->
+               <?php else:?>
+                <img class='img-item-1' src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
+              <?php endif;?>
               <div class="archive-container">
               <h3><?php the_title(); ?></h3>
               <div class="excerpt">

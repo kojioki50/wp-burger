@@ -7,10 +7,12 @@
       else:
         ?>
         <h3><?php
-            $cat = get_category_by_slug('バーガー');
+            $cat = get_category_by_slug('バーガー');?>
+            <?php if($cat): 
             $cat_id = $cat->term_id;
             $cat_link = get_category_link($cat_id);?>
             <a href ="<?php echo esc_url($cat_link);?>">バーガー</a>
+             <?php endif; ?>
 
                 
 
@@ -63,11 +65,13 @@
         ?>
   <?php endif; ?>
        <h3><?php
-            $cat = get_category_by_slug('ドリンク');
+            $cat = get_category_by_slug('ドリンク');?>
+            <?php if($cat): 
             $cat_id = $cat->term_id;
             $cat_link = get_category_link($cat_id);
             ?>
             <a href ="<?php echo esc_url($cat_link);?>">ドリンク</a>
+             <?php endif; ?>
         </h3>
       <?php
           $args = array(

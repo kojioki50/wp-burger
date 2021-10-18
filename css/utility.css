@@ -52,39 +52,48 @@
   margin-bottom: 20px;
 }
 
-.p-single-content {
+.p-single-content,
+.p-single-section {
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 751px) and (max-width: 1200px) {
-  .p-single-content {
+  .p-single-content,
+.p-single-section {
     padding-right: 43px;
     padding-left: 43px;
   }
 }
 @media (min-width: 1201px) {
-  .p-single-content {
+  .p-single-content,
+.p-single-section {
     padding-right: 100px;
     padding-left: 100px;
   }
 }
-.p-single-content h2 {
+.p-single-content h2,
+.p-single-section h2 {
   margin: 30px 0;
   font-size: 28px;
 }
-.p-single-content p {
+.p-single-content p,
+.p-single-section p {
   margin-bottom: 20px;
 }
-.p-single-content h3 {
+.p-single-content h3,
+.p-single-section h3 {
   font-size: 24px;
   margin: 30px 0;
 }
-.p-single-content h4 {
+.p-single-content h4,
+.p-single-section h4 {
   font-size: 20px;
   margin-bottom: 30px;
 }
 .p-single-content ol,
-.p-single-content ul {
+.p-single-content ul,
+.p-single-section ol,
+.p-single-section ul {
   padding-left: 20px;
 }
 
@@ -171,6 +180,20 @@
 .p-archive-item-4 a,
 .p-archive-item-5 a {
     padding: 26px 106px;
+  }
+}
+
+.archive-nokeyword {
+  padding: 0 15px;
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .archive-nokeyword {
+    padding: 0 43px;
+  }
+}
+@media (min-width: 1201px) {
+  .archive-nokeyword {
+    padding: 0 100px;
   }
 }
 

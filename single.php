@@ -7,7 +7,11 @@ while (have_posts()) :
 the_post();
 ?>
 <div class="single-main-top">
+   <?php if(has_post_thumbnail()):?>
   <?php the_post_thumbnail('large', ['class' => 'p-single-img']); ?>
+   <?php else:?>
+  <img class='p-single-img' src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
+   <?php endif;?>
   <h1><?php the_title(); ?></h1>
 </div>
 <div class="p-single-content">
@@ -54,7 +58,11 @@ the_post();
 
       <div class="p-singlemaincover">
       <a href="<?php the_permalink();?>">
+        <?php if(has_post_thumbnail()):?>
         <?php the_post_thumbnail(); ?>
+        <?php else:?>
+          <img src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
+        <?php endif;?>
       </a>
       </div>
        

@@ -65,7 +65,8 @@
 
 }
 
-.p-single-content{
+.p-single-content,
+.p-single-section{
   padding-right: 15px;
   padding-left: 15px;
   @include breakpoint( tablet ){
@@ -151,6 +152,15 @@ a{
  
 
 }
+}
+.archive-nokeyword{
+  padding:0 15px;
+   @include breakpoint( tablet ){
+     padding: 0 43px;
+  }
+   @include breakpoint( pc ){
+     padding: 0 100px;
+  }
 }
 
 .archive-pagination-pc{

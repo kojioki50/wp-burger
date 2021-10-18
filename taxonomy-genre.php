@@ -9,17 +9,17 @@
         <div class="archive-img-mask"></div>
       </div>
 
-
       <div class="p-archive-section">
         <h2>イートインメニュー</h2>
         <?php $terms = get_terms('genre'); ?>
         <?php if ($terms): ?>
         <ul>
           <?php foreach ($terms as $term): ?>
-          <li> <a href="<?php echo get_term_link($term)?>"> <?php echo esc_html($term->name);?></a></li>
-          <?php endforeach; ?>
+              <li> <a href="<?php echo get_term_link($term)?>"> <?php echo esc_html($term->name);?></a></li>
+              <?php endforeach; ?>
         </ul>
           <?php endif; ?>
+
         
         <div class="archive-section-text">
           <p>イートインメニュ一覧となっております。こちらでは当該メニューの概要をご覧になることができます。<br>さらに個々のメニューの情報をご覧になりたい場合は
@@ -34,9 +34,11 @@
                   the_post();
                  ?>
               <div class="p-archive-item-1">
-              <!-- <div class="archive-loop-img"> -->
+              <?php if(has_post_thumbnail()):?>
                 <?php the_post_thumbnail('medium', ['class' => 'img-item-1']); ?>
-              <!-- </div> -->
+              <?php else:?>
+                <img class='img-item-1' src="<?php echo esc_url( get_template_directory_uri()); ?>/./image/cheeseburger.png">
+              <?php endif;?>
               <div class="archive-container">
               <h3><?php the_title(); ?></h3>
               <div class="excerpt">
